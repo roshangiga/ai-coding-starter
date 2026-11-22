@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RoomBook AI — Elevate Your Meeting Experience</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Inter:wght@300;400;500&family=Playfair+Display:wght@700;900&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="changes.css"><!-- presenter overlay -->
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-logo">🏢 RoomBook <span class="badge badge-ai">AI-powered</span></div>
+    <div class="nav-links">
+      <div class="nav-link" onclick="scrollToSection('rooms')">Rooms</div>
+      <div class="nav-link" onclick="scrollToSection('book')">Book</div>
+      <div class="nav-link" onclick="scrollToSection('my-bookings')">My Bookings</div>
+      <div class="nav-cta" onclick="scrollToSection('book')">🚀 Get Started</div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-eyebrow">✨ The future of meetings is here ✨</div>
+    <h1 class="hero-title gradient-text">Elevate Your Meeting Experience</h1>
+    <p class="hero-subtitle">Seamlessly book rooms, unlock productivity, and supercharge collaboration — all in one place. Not just a booking tool — it's a revolution.</p>
+    <div class="hero-badges">
+      <span class="chip chip-glow">⚡ Lightning Fast</span>
+      <span class="chip chip-glow">🔒 Enterprise Secure</span>
+      <span class="chip chip-glow">🤖 AI-Optimized</span>
+      <span class="chip chip-glow">🌍 Cloud Native</span>
+    </div>
+    <div class="hero-actions">
+      <button class="btn-primary-gradient" onclick="scrollToSection('book')">Book a Room Now →</button>
+      <a class="hero-link" onclick="scrollToSection('rooms')">Explore Spaces ✨</a>
+    </div>
+    <div id="welcome-banner" class="welcome-banner"></div>
+  </section>
+
+  <!-- Stats Bar -->
+  <section class="stats-bar">
+    <div class="stat-card glass">
+      <div class="stat-number">10k+</div>
+      <div class="stat-label">Happy Teams</div>
+    </div>
+    <div class="stat-card glass">
+      <div class="stat-number">99.99%</div>
+      <div class="stat-label">Uptime Guaranteed</div>
+    </div>
+    <div class="stat-card glass">
+      <div class="stat-number">2M+</div>
+      <div class="stat-label">Meetings Booked</div>
+    </div>
+    <div class="stat-card glass">
+      <div class="stat-number">4.9★</div>
+      <div class="stat-label">Average Rating</div>
+    </div>
+  </section>
+
+  <!-- Trusted By -->
+  <section class="trusted">
+    <div class="section-eyebrow">TRUSTED BY INDUSTRY LEADERS</div>
+    <p class="trusted-sub">Join thousands of forward-thinking teams worldwide</p>
+    <div class="logo-row">
+      <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='40'><rect width='120' height='40' rx='6' fill='%23e5e7eb'/><text x='60' y='25' font-size='13' text-anchor='middle' fill='%239ca3af' font-family='sans-serif'>Acmecorp</text></svg>">
+      <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='40'><rect width='120' height='40' rx='6' fill='%23e5e7eb'/><text x='60' y='25' font-size='13' text-anchor='middle' fill='%239ca3af' font-family='sans-serif'>Globex</text></svg>">
+      <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='40'><rect width='120' height='40' rx='6' fill='%23e5e7eb'/><text x='60' y='25' font-size='13' text-anchor='middle' fill='%239ca3af' font-family='sans-serif'>Initech</text></svg>">
+      <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='40'><rect width='120' height='40' rx='6' fill='%23e5e7eb'/><text x='60' y='25' font-size='13' text-anchor='middle' fill='%239ca3af' font-family='sans-serif'>Umbrella</text></svg>">
+      <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='40'><rect width='120' height='40' rx='6' fill='%23e5e7eb'/><text x='60' y='25' font-size='13' text-anchor='middle' fill='%239ca3af' font-family='sans-serif'>Hooli</text></svg>">
+    </div>
+  </section>
+
+  <!-- Rooms Section -->
+  <section id="rooms" class="rooms-section">
+    <div class="section-eyebrow">🏢 OUR SPACES</div>
+    <h2 class="section-title">Discover Your Perfect Space</h2>
+    <p class="section-subtitle">Handpicked rooms designed to inspire creativity and drive results — seamlessly.</p>
+
+    <div class="filter-bar">
+      <input type="text" id="room-search" class="search-input" placeholder="🔍 Search rooms or try capacity > 6 ...">
+      <div class="filter-chip" onclick="filterRooms('all')">All</div>
+      <div class="filter-chip" onclick="filterRooms('available')">✅ Available</div>
+      <div class="filter-chip" onclick="filterRooms('large')">👥 Large</div>
+      <div class="filter-chip" onclick="filterRooms('popular')">🔥 Popular</div>
+    </div>
+
+    <div id="rooms-grid" class="rooms-grid"></div>
+  </section>
+
+  <!-- Booking Form -->
+  <section id="book" class="booking-section">
+    <div class="booking-wrapper glass">
+      <div class="section-eyebrow">📅 RESERVE IN SECONDS</div>
+      <h2 class="section-title gradient-text">Book Your Space</h2>
+      <p class="section-subtitle">Unlock seamless collaboration in just a few clicks — no friction, just flow.</p>
+
+      <div class="form-card">
+        <div class="form-card-inner">
+          <div class="form-row">
+            <select id="booking-room" class="form-input"></select>
+          </div>
+          <div class="form-row">
+            <input type="text" id="booking-title" class="form-input" placeholder="Meeting title">
+          </div>
+          <div class="form-row form-row-split">
+            <input type="date" id="booking-date" class="form-input">
+            <select id="booking-start" class="form-input"></select>
+            <select id="booking-end" class="form-input"></select>
+          </div>
+          <div class="form-row">
+            <input type="number" id="booking-attendees" class="form-input" placeholder="Number of attendees">
+          </div>
+          <div class="form-row">
+            <input type="text" id="booking-name" class="form-input" placeholder="Your name">
+          </div>
+          <div class="form-hint">💡 Pro tip: Our AI automatically optimizes your booking for maximum productivity!</div>
+          <div id="booking-message" class="booking-message"></div>
+          <div class="submit-booking-btn" onclick="handleBookingSubmit()">✨ Confirm Booking ✨</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- My Bookings -->
+  <section id="my-bookings" class="my-bookings-section">
+    <div class="section-eyebrow">🗓️ YOUR SCHEDULE</div>
+    <h2 class="section-title">My Bookings</h2>
+    <p class="section-subtitle">Stay on top of your meetings — effortlessly and seamlessly.</p>
+    <div id="my-bookings-list" class="my-bookings-list"></div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <div class="section-eyebrow">💬 WHAT PEOPLE SAY</div>
+    <h2 class="section-title gradient-text">Loved by Teams Everywhere</h2>
+    <p class="section-subtitle">Don't just take our word for it — hear from our amazing community.</p>
+    <div class="testimonial-grid">
+      <div class="testimonial-card glass">
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <p class="testimonial-text">"RoomBook completely transformed how our team collaborates. We've seen a 300% increase in meeting productivity!"</p>
+        <div class="testimonial-author">
+          <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40'><circle cx='20' cy='20' r='20' fill='%23c4b5fd'/></svg>" class="avatar">
+          <div>
+            <div class="author-name">Sarah J.</div>
+            <div class="author-role">VP of Innovation</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card glass">
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <p class="testimonial-text">"Not just a booking tool — it's a game-changer. I can't imagine going back to the old way."</p>
+        <div class="testimonial-author">
+          <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40'><circle cx='20' cy='20' r='20' fill='%23f9a8d4'/></svg>" class="avatar">
+          <div>
+            <div class="author-name">Michael T.</div>
+            <div class="author-role">Head of Synergy</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card glass">
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <p class="testimonial-text">"Seamless, intuitive, and powerful. RoomBook is the future of workplace collaboration."</p>
+        <div class="testimonial-author">
+          <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40'><circle cx='20' cy='20' r='20' fill='%23a5b4fc'/></svg>" class="avatar">
+          <div>
+            <div class="author-name">Priya K.</div>
+            <div class="author-role">Chief Meeting Officer</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <h2 class="cta-title">Ready to Revolutionize Your Meetings?</h2>
+    <p class="cta-sub">Join 10k+ teams who've already made the switch — it only takes seconds.</p>
+    <a class="cta-btn" onclick="scrollToSection('book')">Start Booking Free 🚀</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">🏢 RoomBook</div>
+        <p class="footer-tagline">Elevating meetings, one room at a time — seamlessly.</p>
+      </div>
+      <div>
+        <div class="footer-heading">Product</div>
+        <div class="footer-link">Features</div>
+        <div class="footer-link">Pricing</div>
+        <div class="footer-link">Integrations</div>
+      </div>
+      <div>
+        <div class="footer-heading">Company</div>
+        <div class="footer-link">About</div>
+        <div class="footer-link">Careers</div>
+        <div class="footer-link">Blog</div>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2024 RoomBook AI. All rights reserved. Made with ❤️ and AI.</div>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+  <!-- presenter overlay, not part of the app -->
+  <script src="changes.data.js"></script>
+  <script src="changes.js"></script>
+</body>
+</html>

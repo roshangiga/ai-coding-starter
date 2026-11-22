@@ -1,0 +1,856 @@
+[
+ {
+  "antipattern": "ai-color-palette",
+  "name": "AI color palette",
+  "description": "Purple/violet gradients and cyan-on-dark are the most recognizable tells of AI-generated UIs. A gradient in one of those hues is the tell on its own; flat neon ink on a dark ground is charged once a second tell hue joins it. Choose a distinctive, intentional palette.",
+  "severity": "warning",
+  "category": "slop",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "Purple/violet text (#4c1d95) on heading"
+ },
+ {
+  "antipattern": "low-contrast",
+  "name": "Low contrast text",
+  "description": "Text does not meet WCAG AA contrast requirements (4.5:1 for body, 3:1 for large text). Increase the contrast between text and background.",
+  "severity": "warning",
+  "category": "quality",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "2.4:1 (need 4.5:1) \u2014 text #ffffff on #06b6d4 (gradient on span.badge)"
+ },
+ {
+  "antipattern": "low-contrast",
+  "name": "Low contrast text",
+  "description": "Text does not meet WCAG AA contrast requirements (4.5:1 for body, 3:1 for large text). Increase the contrast between text and background.",
+  "severity": "warning",
+  "category": "quality",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "2.5:1 (need 4.5:1) \u2014 text #a1a1aa on #fcfcff (and 2 more)"
+ },
+ {
+  "antipattern": "low-contrast",
+  "name": "Low contrast text",
+  "description": "Text does not meet WCAG AA contrast requirements (4.5:1 for body, 3:1 for large text). Increase the contrast between text and background.",
+  "severity": "warning",
+  "category": "quality",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "3.5:1 (need 4.5:1) \u2014 text #ffffff on #ec4899 (gradient on div.nav-cta)"
+ },
+ {
+  "antipattern": "gradient-text",
+  "name": "Gradient text",
+  "description": "Gradient text is decorative rather than meaningful \u2014 a common AI tell, especially on headings and metrics. Use solid colors for text.",
+  "severity": "warning",
+  "category": "slop",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "background-clip: text + gradient"
+ },
+ {
+  "antipattern": "low-contrast",
+  "name": "Low contrast text",
+  "description": "Text does not meet WCAG AA contrast requirements (4.5:1 for body, 3:1 for large text). Increase the contrast between text and background.",
+  "severity": "warning",
+  "category": "quality",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "1.7:1 (need 4.5:1) \u2014 text #fdf4ff on #f3a6fc (gradient on section.hero) (and 3 more)"
+ },
+ {
+  "antipattern": "low-contrast",
+  "name": "Low contrast text",
+  "description": "Text does not meet WCAG AA contrast requirements (4.5:1 for body, 3:1 for large text). Increase the contrast between text and background.",
+  "severity": "warning",
+  "category": "quality",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "3.5:1 (need 4.5:1) \u2014 text #ffffff on #ec4899 (gradient on button.btn-primary-gradient)"
+ },
+ {
+  "antipattern": "gradient-text",
+  "name": "Gradient text",
+  "description": "Gradient text is decorative rather than meaningful \u2014 a common AI tell, especially on headings and metrics. Use solid colors for text.",
+  "severity": "warning",
+  "category": "slop",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "background-clip: text + gradient"
+ },
+ {
+  "antipattern": "low-contrast",
+  "name": "Low contrast text",
+  "description": "Text does not meet WCAG AA contrast requirements (4.5:1 for body, 3:1 for large text). Increase the contrast between text and background.",
+  "severity": "warning",
+  "category": "quality",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "2.0:1 (need 4.5:1) \u2014 text #b4b4bc on #faf9ff (and 3 more)"
+ },
+ {
+  "antipattern": "gradient-text",
+  "name": "Gradient text",
+  "description": "Gradient text is decorative rather than meaningful \u2014 a common AI tell, especially on headings and metrics. Use solid colors for text.",
+  "severity": "warning",
+  "category": "slop",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "background-clip: text + gradient"
+ },
+ {
+  "antipattern": "gradient-text",
+  "name": "Gradient text",
+  "description": "Gradient text is decorative rather than meaningful \u2014 a common AI tell, especially on headings and metrics. Use solid colors for text.",
+  "severity": "warning",
+  "category": "slop",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "background-clip: text + gradient"
+ },
+ {
+  "antipattern": "gradient-text",
+  "name": "Gradient text",
+  "description": "Gradient text is decorative rather than meaningful \u2014 a common AI tell, especially on headings and metrics. Use solid colors for text.",
+  "severity": "warning",
+  "category": "slop",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "background-clip: text + gradient"
+ },
+ {
+  "antipattern": "low-contrast",
+  "name": "Low contrast text",
+  "description": "Text does not meet WCAG AA contrast requirements (4.5:1 for body, 3:1 for large text). Increase the contrast between text and background.",
+  "severity": "warning",
+  "category": "quality",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "1.7:1 (need 4.5:1) \u2014 text #c4b5fd on #f8f7ff (and 2 more)"
+ },
+ {
+  "antipattern": "low-contrast",
+  "name": "Low contrast text",
+  "description": "Text does not meet WCAG AA contrast requirements (4.5:1 for body, 3:1 for large text). Increase the contrast between text and background.",
+  "severity": "warning",
+  "category": "quality",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "1.7:1 (need 4.5:1) \u2014 text #c0c0c8 on #f8f7ff"
+ },
+ {
+  "antipattern": "low-contrast",
+  "name": "Low contrast text",
+  "description": "Text does not meet WCAG AA contrast requirements (4.5:1 for body, 3:1 for large text). Increase the contrast between text and background.",
+  "severity": "warning",
+  "category": "quality",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "2.2:1 (need 4.5:1) \u2014 text #a8a8b3 on #f8f7ff (and 1 more)"
+ },
+ {
+  "antipattern": "low-contrast",
+  "name": "Low contrast text",
+  "description": "Text does not meet WCAG AA contrast requirements (4.5:1 for body, 3:1 for large text). Increase the contrast between text and background.",
+  "severity": "warning",
+  "category": "quality",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "3.8:1 (need 4.5:1) \u2014 text #8b5cf6 on #f3f0ff (and 3 more)"
+ },
+ {
+  "antipattern": "low-contrast",
+  "name": "Low contrast text",
+  "description": "Text does not meet WCAG AA contrast requirements (4.5:1 for body, 3:1 for large text). Increase the contrast between text and background.",
+  "severity": "warning",
+  "category": "quality",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "1.7:1 (need 4.5:1) \u2014 text #c4b5fd on #fef5fa (gradient on section#book)"
+ },
+ {
+  "antipattern": "gradient-text",
+  "name": "Gradient text",
+  "description": "Gradient text is decorative rather than meaningful \u2014 a common AI tell, especially on headings and metrics. Use solid colors for text.",
+  "severity": "warning",
+  "category": "slop",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "background-clip: text + gradient"
+ },
+ {
+  "antipattern": "low-contrast",
+  "name": "Low contrast text",
+  "description": "Text does not meet WCAG AA contrast requirements (4.5:1 for body, 3:1 for large text). Increase the contrast between text and background.",
+  "severity": "warning",
+  "category": "quality",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "2.2:1 (need 4.5:1) \u2014 text #a8a8b3 on #fef5fa (gradient on section#book)"
+ },
+ {
+  "antipattern": "low-contrast",
+  "name": "Low contrast text",
+  "description": "Text does not meet WCAG AA contrast requirements (4.5:1 for body, 3:1 for large text). Increase the contrast between text and background.",
+  "severity": "warning",
+  "category": "quality",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "placeholder \"Meeting title\" 1.4:1 (need 4.5:1) \u2014 text #d4d4d8 on #fcfbff"
+ },
+ {
+  "antipattern": "low-contrast",
+  "name": "Low contrast text",
+  "description": "Text does not meet WCAG AA contrast requirements (4.5:1 for body, 3:1 for large text). Increase the contrast between text and background.",
+  "severity": "warning",
+  "category": "quality",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "placeholder \"Number of attendees\" 1.4:1 (need 4.5:1) \u2014 text #d4d4d8 on #fcfbff"
+ },
+ {
+  "antipattern": "low-contrast",
+  "name": "Low contrast text",
+  "description": "Text does not meet WCAG AA contrast requirements (4.5:1 for body, 3:1 for large text). Increase the contrast between text and background.",
+  "severity": "warning",
+  "category": "quality",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "placeholder \"Your name\" 1.4:1 (need 4.5:1) \u2014 text #d4d4d8 on #fcfbff"
+ },
+ {
+  "antipattern": "low-contrast",
+  "name": "Low contrast text",
+  "description": "Text does not meet WCAG AA contrast requirements (4.5:1 for body, 3:1 for large text). Increase the contrast between text and background.",
+  "severity": "warning",
+  "category": "quality",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "1.8:1 (need 4.5:1) \u2014 text #c4b5fd on #ffffff"
+ },
+ {
+  "antipattern": "low-contrast",
+  "name": "Low contrast text",
+  "description": "Text does not meet WCAG AA contrast requirements (4.5:1 for body, 3:1 for large text). Increase the contrast between text and background.",
+  "severity": "warning",
+  "category": "quality",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "2.0:1 (need 4.5:1) \u2014 text #ffffff on #f093fb (gradient on div.submit-booking-btn)"
+ },
+ {
+  "antipattern": "low-contrast",
+  "name": "Low contrast text",
+  "description": "Text does not meet WCAG AA contrast requirements (4.5:1 for body, 3:1 for large text). Increase the contrast between text and background.",
+  "severity": "warning",
+  "category": "quality",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "1.6:1 (need 4.5:1) \u2014 text #c4b5fd on #ede9fe (gradient on section.testimonials)"
+ },
+ {
+  "antipattern": "gradient-text",
+  "name": "Gradient text",
+  "description": "Gradient text is decorative rather than meaningful \u2014 a common AI tell, especially on headings and metrics. Use solid colors for text.",
+  "severity": "warning",
+  "category": "slop",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "background-clip: text + gradient"
+ },
+ {
+  "antipattern": "low-contrast",
+  "name": "Low contrast text",
+  "description": "Text does not meet WCAG AA contrast requirements (4.5:1 for body, 3:1 for large text). Increase the contrast between text and background.",
+  "severity": "warning",
+  "category": "quality",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "2.0:1 (need 4.5:1) \u2014 text #a8a8b3 on #ede9fe (gradient on section.testimonials)"
+ },
+ {
+  "antipattern": "low-contrast",
+  "name": "Low contrast text",
+  "description": "Text does not meet WCAG AA contrast requirements (4.5:1 for body, 3:1 for large text). Increase the contrast between text and background.",
+  "severity": "advisory",
+  "category": "quality",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "4.3:1 (need 4.5:1) \u2014 text #6b7280 on #f2effe (gradient on section.testimonials) (and 2 more)",
+  "advisory": true
+ },
+ {
+  "antipattern": "low-contrast",
+  "name": "Low contrast text",
+  "description": "Text does not meet WCAG AA contrast requirements (4.5:1 for body, 3:1 for large text). Increase the contrast between text and background.",
+  "severity": "warning",
+  "category": "quality",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "1.8:1 (need 4.5:1) \u2014 text #b4b4bc on #f2effe (gradient on section.testimonials) (and 2 more)"
+ },
+ {
+  "antipattern": "gray-on-color",
+  "name": "Gray text on colored background",
+  "description": "Gray text looks washed out on colored backgrounds. Use a darker shade of the background color instead, or white/near-white for contrast.",
+  "severity": "warning",
+  "category": "quality",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "text #4b4b6b on bg #1e1b4b"
+ },
+ {
+  "antipattern": "low-contrast",
+  "name": "Low contrast text",
+  "description": "Text does not meet WCAG AA contrast requirements (4.5:1 for body, 3:1 for large text). Increase the contrast between text and background.",
+  "severity": "warning",
+  "category": "quality",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "1.9:1 (need 4.5:1) \u2014 text #4b4b6b on #1e1b4b (and 1 more)"
+ },
+ {
+  "antipattern": "gray-on-color",
+  "name": "Gray text on colored background",
+  "description": "Gray text looks washed out on colored backgrounds. Use a darker shade of the background color instead, or white/near-white for contrast.",
+  "severity": "warning",
+  "category": "quality",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "text #a5a5c0 on bg #1e1b4b"
+ },
+ {
+  "antipattern": "gray-on-color",
+  "name": "Gray text on colored background",
+  "description": "Gray text looks washed out on colored backgrounds. Use a darker shade of the background color instead, or white/near-white for contrast.",
+  "severity": "warning",
+  "category": "quality",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "text #6b6b8a on bg #1e1b4b"
+ },
+ {
+  "antipattern": "low-contrast",
+  "name": "Low contrast text",
+  "description": "Text does not meet WCAG AA contrast requirements (4.5:1 for body, 3:1 for large text). Increase the contrast between text and background.",
+  "severity": "warning",
+  "category": "quality",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "3.1:1 (need 4.5:1) \u2014 text #6b6b8a on #1e1b4b (and 5 more)"
+ },
+ {
+  "antipattern": "gray-on-color",
+  "name": "Gray text on colored background",
+  "description": "Gray text looks washed out on colored backgrounds. Use a darker shade of the background color instead, or white/near-white for contrast.",
+  "severity": "warning",
+  "category": "quality",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "text #6b6b8a on bg #1e1b4b"
+ },
+ {
+  "antipattern": "gray-on-color",
+  "name": "Gray text on colored background",
+  "description": "Gray text looks washed out on colored backgrounds. Use a darker shade of the background color instead, or white/near-white for contrast.",
+  "severity": "warning",
+  "category": "quality",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "text #6b6b8a on bg #1e1b4b"
+ },
+ {
+  "antipattern": "gray-on-color",
+  "name": "Gray text on colored background",
+  "description": "Gray text looks washed out on colored backgrounds. Use a darker shade of the background color instead, or white/near-white for contrast.",
+  "severity": "warning",
+  "category": "quality",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "text #a5a5c0 on bg #1e1b4b"
+ },
+ {
+  "antipattern": "gray-on-color",
+  "name": "Gray text on colored background",
+  "description": "Gray text looks washed out on colored backgrounds. Use a darker shade of the background color instead, or white/near-white for contrast.",
+  "severity": "warning",
+  "category": "quality",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "text #6b6b8a on bg #1e1b4b"
+ },
+ {
+  "antipattern": "gray-on-color",
+  "name": "Gray text on colored background",
+  "description": "Gray text looks washed out on colored backgrounds. Use a darker shade of the background color instead, or white/near-white for contrast.",
+  "severity": "warning",
+  "category": "quality",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "text #6b6b8a on bg #1e1b4b"
+ },
+ {
+  "antipattern": "gray-on-color",
+  "name": "Gray text on colored background",
+  "description": "Gray text looks washed out on colored backgrounds. Use a darker shade of the background color instead, or white/near-white for contrast.",
+  "severity": "warning",
+  "category": "quality",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "text #6b6b8a on bg #1e1b4b"
+ },
+ {
+  "antipattern": "gray-on-color",
+  "name": "Gray text on colored background",
+  "description": "Gray text looks washed out on colored backgrounds. Use a darker shade of the background color instead, or white/near-white for contrast.",
+  "severity": "warning",
+  "category": "quality",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "text #4b4b6b on bg #1e1b4b"
+ },
+ {
+  "antipattern": "undersized-ui-text",
+  "name": "Undersized functional text",
+  "description": "Interactive and content-bearing UI text (links, buttons, nav items, labels, table cells, meta rows, timecodes) below 11px is a legibility failure, not a style choice. WCAG sets no absolute pixel floor, but functional text under 11px is a defensible quality bar: it fails on high-DPI and small viewports and it degrades tap and read targets. The 11px floor holds even inside a footer; only non-interactive legal smallprint gets the softer 10px floor. Being ON the DESIGN.md size ramp does not exempt a value here: adding 8px to the ramp launders the token but not the legibility problem, and that is exactly the escape hatch this rule closes. Exempts sup/sub, visually-hidden (sr-only) text, and code/terminal contexts. Decorative letterspaced micro-labels are still functional and stay in scope.",
+  "severity": "warning",
+  "category": "quality",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "9px functional text \"AI-powered\" (below 11px floor)"
+ },
+ {
+  "antipattern": "tiny-text",
+  "name": "Tiny body text",
+  "description": "Body text below 12px is hard to read, especially on high-DPI screens. Use at least 14px for body content, 16px is ideal.",
+  "severity": "warning",
+  "category": "quality",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "10px body text"
+ },
+ {
+  "antipattern": "undersized-ui-text",
+  "name": "Undersized functional text",
+  "description": "Interactive and content-bearing UI text (links, buttons, nav items, labels, table cells, meta rows, timecodes) below 11px is a legibility failure, not a style choice. WCAG sets no absolute pixel floor, but functional text under 11px is a defensible quality bar: it fails on high-DPI and small viewports and it degrades tap and read targets. The 11px floor holds even inside a footer; only non-interactive legal smallprint gets the softer 10px floor. Being ON the DESIGN.md size ramp does not exempt a value here: adding 8px to the ramp launders the token but not the legibility problem, and that is exactly the escape hatch this rule closes. Exempts sup/sub, visually-hidden (sr-only) text, and code/terminal contexts. Decorative letterspaced micro-labels are still functional and stay in scope.",
+  "severity": "warning",
+  "category": "quality",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "10px functional text \"TRUSTED BY INDUSTRY LEADERS\" (below 11px floor)"
+ },
+ {
+  "antipattern": "undersized-ui-text",
+  "name": "Undersized functional text",
+  "description": "Interactive and content-bearing UI text (links, buttons, nav items, labels, table cells, meta rows, timecodes) below 11px is a legibility failure, not a style choice. WCAG sets no absolute pixel floor, but functional text under 11px is a defensible quality bar: it fails on high-DPI and small viewports and it degrades tap and read targets. The 11px floor holds even inside a footer; only non-interactive legal smallprint gets the softer 10px floor. Being ON the DESIGN.md size ramp does not exempt a value here: adding 8px to the ramp launders the token but not the legibility problem, and that is exactly the escape hatch this rule closes. Exempts sup/sub, visually-hidden (sr-only) text, and code/terminal contexts. Decorative letterspaced micro-labels are still functional and stay in scope.",
+  "severity": "advisory",
+  "category": "quality",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "10px functional text \"\ud83c\udfe2 OUR SPACES\" (below 11px floor)",
+  "advisory": true
+ },
+ {
+  "antipattern": "tiny-text",
+  "name": "Tiny body text",
+  "description": "Body text below 12px is hard to read, especially on high-DPI screens. Use at least 14px for body content, 16px is ideal.",
+  "severity": "warning",
+  "category": "quality",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "10px body text"
+ },
+ {
+  "antipattern": "undersized-ui-text",
+  "name": "Undersized functional text",
+  "description": "Interactive and content-bearing UI text (links, buttons, nav items, labels, table cells, meta rows, timecodes) below 11px is a legibility failure, not a style choice. WCAG sets no absolute pixel floor, but functional text under 11px is a defensible quality bar: it fails on high-DPI and small viewports and it degrades tap and read targets. The 11px floor holds even inside a footer; only non-interactive legal smallprint gets the softer 10px floor. Being ON the DESIGN.md size ramp does not exempt a value here: adding 8px to the ramp launders the token but not the legibility problem, and that is exactly the escape hatch this rule closes. Exempts sup/sub, visually-hidden (sr-only) text, and code/terminal contexts. Decorative letterspaced micro-labels are still functional and stay in scope.",
+  "severity": "advisory",
+  "category": "quality",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "10px functional text \"\ud83d\udcc5 RESERVE IN SECONDS\" (below 11px floor)",
+  "advisory": true
+ },
+ {
+  "antipattern": "tiny-text",
+  "name": "Tiny body text",
+  "description": "Body text below 12px is hard to read, especially on high-DPI screens. Use at least 14px for body content, 16px is ideal.",
+  "severity": "warning",
+  "category": "quality",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "11px body text"
+ },
+ {
+  "antipattern": "undersized-ui-text",
+  "name": "Undersized functional text",
+  "description": "Interactive and content-bearing UI text (links, buttons, nav items, labels, table cells, meta rows, timecodes) below 11px is a legibility failure, not a style choice. WCAG sets no absolute pixel floor, but functional text under 11px is a defensible quality bar: it fails on high-DPI and small viewports and it degrades tap and read targets. The 11px floor holds even inside a footer; only non-interactive legal smallprint gets the softer 10px floor. Being ON the DESIGN.md size ramp does not exempt a value here: adding 8px to the ramp launders the token but not the legibility problem, and that is exactly the escape hatch this rule closes. Exempts sup/sub, visually-hidden (sr-only) text, and code/terminal contexts. Decorative letterspaced micro-labels are still functional and stay in scope.",
+  "severity": "advisory",
+  "category": "quality",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "10px functional text \"\ud83d\uddd3\ufe0f YOUR SCHEDULE\" (below 11px floor)",
+  "advisory": true
+ },
+ {
+  "antipattern": "undersized-ui-text",
+  "name": "Undersized functional text",
+  "description": "Interactive and content-bearing UI text (links, buttons, nav items, labels, table cells, meta rows, timecodes) below 11px is a legibility failure, not a style choice. WCAG sets no absolute pixel floor, but functional text under 11px is a defensible quality bar: it fails on high-DPI and small viewports and it degrades tap and read targets. The 11px floor holds even inside a footer; only non-interactive legal smallprint gets the softer 10px floor. Being ON the DESIGN.md size ramp does not exempt a value here: adding 8px to the ramp launders the token but not the legibility problem, and that is exactly the escape hatch this rule closes. Exempts sup/sub, visually-hidden (sr-only) text, and code/terminal contexts. Decorative letterspaced micro-labels are still functional and stay in scope.",
+  "severity": "advisory",
+  "category": "quality",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "10px functional text \"\ud83d\udcac WHAT PEOPLE SAY\" (below 11px floor)",
+  "advisory": true
+ },
+ {
+  "antipattern": "tiny-text",
+  "name": "Tiny body text",
+  "description": "Body text below 12px is hard to read, especially on high-DPI screens. Use at least 14px for body content, 16px is ideal.",
+  "severity": "warning",
+  "category": "quality",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "11px body text"
+ },
+ {
+  "antipattern": "gpt-thin-border-wide-shadow",
+  "name": "Hairline border with wide shadow",
+  "description": "Every card of this row wears a hairline border paired with a wide, diffuse shadow, which is a recurring generated-UI signature. One floating panel earns both; a whole row wearing them reads as a default nobody chose. Across the row, commit to one: a defined edge or a soft elevation.",
+  "severity": "advisory",
+  "category": "slop",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "1px border + 32px shadow blur, repeated across the row",
+  "advisory": true
+ },
+ {
+  "antipattern": "gpt-thin-border-wide-shadow",
+  "name": "Hairline border with wide shadow",
+  "description": "Every card of this row wears a hairline border paired with a wide, diffuse shadow, which is a recurring generated-UI signature. One floating panel earns both; a whole row wearing them reads as a default nobody chose. Across the row, commit to one: a defined edge or a soft elevation.",
+  "severity": "advisory",
+  "category": "slop",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "1px border + 32px shadow blur, repeated across the row",
+  "advisory": true
+ },
+ {
+  "antipattern": "gpt-thin-border-wide-shadow",
+  "name": "Hairline border with wide shadow",
+  "description": "Every card of this row wears a hairline border paired with a wide, diffuse shadow, which is a recurring generated-UI signature. One floating panel earns both; a whole row wearing them reads as a default nobody chose. Across the row, commit to one: a defined edge or a soft elevation.",
+  "severity": "advisory",
+  "category": "slop",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "1px border + 32px shadow blur, repeated across the row",
+  "advisory": true
+ },
+ {
+  "antipattern": "gpt-thin-border-wide-shadow",
+  "name": "Hairline border with wide shadow",
+  "description": "Every card of this row wears a hairline border paired with a wide, diffuse shadow, which is a recurring generated-UI signature. One floating panel earns both; a whole row wearing them reads as a default nobody chose. Across the row, commit to one: a defined edge or a soft elevation.",
+  "severity": "advisory",
+  "category": "slop",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "1px border + 32px shadow blur, repeated across the row",
+  "advisory": true
+ },
+ {
+  "antipattern": "gpt-thin-border-wide-shadow",
+  "name": "Hairline border with wide shadow",
+  "description": "Every card of this row wears a hairline border paired with a wide, diffuse shadow, which is a recurring generated-UI signature. One floating panel earns both; a whole row wearing them reads as a default nobody chose. Across the row, commit to one: a defined edge or a soft elevation.",
+  "severity": "advisory",
+  "category": "slop",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "1px border + 32px shadow blur, repeated across the row",
+  "advisory": true
+ },
+ {
+  "antipattern": "gpt-thin-border-wide-shadow",
+  "name": "Hairline border with wide shadow",
+  "description": "Every card of this row wears a hairline border paired with a wide, diffuse shadow, which is a recurring generated-UI signature. One floating panel earns both; a whole row wearing them reads as a default nobody chose. Across the row, commit to one: a defined edge or a soft elevation.",
+  "severity": "advisory",
+  "category": "slop",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "1px border + 32px shadow blur, repeated across the row",
+  "advisory": true
+ },
+ {
+  "antipattern": "gpt-thin-border-wide-shadow",
+  "name": "Hairline border with wide shadow",
+  "description": "Every card of this row wears a hairline border paired with a wide, diffuse shadow, which is a recurring generated-UI signature. One floating panel earns both; a whole row wearing them reads as a default nobody chose. Across the row, commit to one: a defined edge or a soft elevation.",
+  "severity": "advisory",
+  "category": "slop",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "1px border + 32px shadow blur, repeated across the row",
+  "advisory": true
+ },
+ {
+  "antipattern": "gpt-thin-border-wide-shadow",
+  "name": "Hairline border with wide shadow",
+  "description": "Every card of this row wears a hairline border paired with a wide, diffuse shadow, which is a recurring generated-UI signature. One floating panel earns both; a whole row wearing them reads as a default nobody chose. Across the row, commit to one: a defined edge or a soft elevation.",
+  "severity": "advisory",
+  "category": "slop",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "1px border + 32px shadow blur, repeated across the row",
+  "advisory": true
+ },
+ {
+  "antipattern": "overused-font",
+  "name": "Overused font",
+  "description": "Inter, Roboto, Fraunces, Geist, Plus Jakarta Sans, and Space Grotesk are used on so many sites they no longer feel distinctive. Each new wave of AI-generated UIs converges on the same handful of faces. Choose a face that gives your interface personality.",
+  "severity": "warning",
+  "category": "slop",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "Primary font: montserrat"
+ },
+ {
+  "antipattern": "overused-font",
+  "name": "Overused font",
+  "description": "Inter, Roboto, Fraunces, Geist, Plus Jakarta Sans, and Space Grotesk are used on so many sites they no longer feel distinctive. Each new wave of AI-generated UIs converges on the same handful of faces. Choose a face that gives your interface personality.",
+  "severity": "warning",
+  "category": "slop",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "Primary font: inter"
+ },
+ {
+  "antipattern": "kicker-above-heading",
+  "name": "Kicker / eyebrow label above heading",
+  "description": "A tiny tracked uppercase or small-caps label sitting as its own block directly above a heading is banned outright, repeated or not. Generated kickers never earn their place: the heading carries its own weight. Delete the label and let the heading speak; if the words matter, work them into the heading or the body.",
+  "severity": "warning",
+  "category": "slop",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "kicker \"\u2728 The future of meetings is here \u2728\" above h1 \"Elevate Your Meeting Experience\""
+ },
+ {
+  "antipattern": "kicker-above-heading",
+  "name": "Kicker / eyebrow label above heading",
+  "description": "A tiny tracked uppercase or small-caps label sitting as its own block directly above a heading is banned outright, repeated or not. Generated kickers never earn their place: the heading carries its own weight. Delete the label and let the heading speak; if the words matter, work them into the heading or the body.",
+  "severity": "warning",
+  "category": "slop",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "kicker \"\ud83c\udfe2 OUR SPACES\" above h2 \"Discover Your Perfect Space\""
+ },
+ {
+  "antipattern": "kicker-above-heading",
+  "name": "Kicker / eyebrow label above heading",
+  "description": "A tiny tracked uppercase or small-caps label sitting as its own block directly above a heading is banned outright, repeated or not. Generated kickers never earn their place: the heading carries its own weight. Delete the label and let the heading speak; if the words matter, work them into the heading or the body.",
+  "severity": "warning",
+  "category": "slop",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "kicker \"\ud83d\udcc5 RESERVE IN SECONDS\" above h2 \"Book Your Space\""
+ },
+ {
+  "antipattern": "kicker-above-heading",
+  "name": "Kicker / eyebrow label above heading",
+  "description": "A tiny tracked uppercase or small-caps label sitting as its own block directly above a heading is banned outright, repeated or not. Generated kickers never earn their place: the heading carries its own weight. Delete the label and let the heading speak; if the words matter, work them into the heading or the body.",
+  "severity": "warning",
+  "category": "slop",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "kicker \"\ud83d\uddd3\ufe0f YOUR SCHEDULE\" above h2 \"My Bookings\""
+ },
+ {
+  "antipattern": "kicker-above-heading",
+  "name": "Kicker / eyebrow label above heading",
+  "description": "A tiny tracked uppercase or small-caps label sitting as its own block directly above a heading is banned outright, repeated or not. Generated kickers never earn their place: the heading carries its own weight. Delete the label and let the heading speak; if the words matter, work them into the heading or the body.",
+  "severity": "warning",
+  "category": "slop",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "kicker \"\ud83d\udcac WHAT PEOPLE SAY\" above h2 \"Loved by Teams Everywhere\""
+ },
+ {
+  "antipattern": "nested-cards",
+  "name": "Nested cards",
+  "description": "Cards inside cards create visual noise and excessive depth. Flatten the hierarchy \u2014 use spacing, typography, and dividers instead of nesting containers.",
+  "severity": "warning",
+  "category": "slop",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "Card inside card (div)"
+ },
+ {
+  "antipattern": "ai-color-palette",
+  "name": "AI color palette",
+  "description": "Purple/violet gradients and cyan-on-dark are the most recognizable tells of AI-generated UIs. A gradient in one of those hues is the tell on its own; flat neon ink on a dark ground is charged once a second tell hue joins it. Choose a distinctive, intentional palette.",
+  "severity": "warning",
+  "category": "slop",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "Purple/violet accent colors detected"
+ },
+ {
+  "antipattern": "gradient-text",
+  "name": "Gradient text",
+  "description": "Gradient text is decorative rather than meaningful \u2014 a common AI tell, especially on headings and metrics. Use solid colors for text.",
+  "severity": "warning",
+  "category": "slop",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "background-clip: text + gradient"
+ },
+ {
+  "antipattern": "dark-glow",
+  "name": "Glowing shadow accents",
+  "description": "Colored glow shadows \u2014 a zero-offset chromatic halo (box- or text-shadow) on any background, or any colored blurred shadow on a dark background \u2014 are the default \"cool\" look of AI-generated UIs. Use neutral elevation shadows and subtle, purposeful lighting instead.",
+  "severity": "warning",
+  "category": "slop",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "Colored box-shadow glow (#ec4899) on dark page"
+ },
+ {
+  "antipattern": "em-dash-overuse",
+  "name": "Em-dash overuse",
+  "description": "Em-dash saturation in body copy is an AI cadence tell. Advisory only: humans use em-dashes legitimately, so this fires only on saturation \u2014 at least 8 em-dashes (\u2014 or --) at a density near one per 500 characters of body text \u2014 never on a long article that uses a few. Prefer commas, colons, periods, or parentheses.",
+  "severity": "advisory",
+  "category": "slop",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "10 em-dashes in body text",
+  "advisory": true
+ },
+ {
+  "antipattern": "marketing-buzzword",
+  "name": "Marketing buzzword",
+  "description": "Generic SaaS phrases (streamline / empower / supercharge / world-class / enterprise-grade / next-generation / cutting-edge / etc) are instant AI tells. Pick a specific verb and noun that says what the product literally does.",
+  "severity": "warning",
+  "category": "slop",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "3 buzzword phrases: \"er Ready to Revolutionize Your Meetin\""
+ },
+ {
+  "antipattern": "side-tab",
+  "name": "Side-tab accent border",
+  "description": "Thick colored border on one side of a card \u2014 the most recognizable tell of AI-generated UIs. Use a subtler accent or remove it entirely.",
+  "severity": "warning",
+  "category": "slop",
+  "file": "styles.css",
+  "line": 605,
+  "snippet": "border-left: 4px solid #a78bfa"
+ },
+ {
+  "antipattern": "overused-font",
+  "name": "Overused font",
+  "description": "Inter, Roboto, Fraunces, Geist, Plus Jakarta Sans, and Space Grotesk are used on so many sites they no longer feel distinctive. Each new wave of AI-generated UIs converges on the same handful of faces. Choose a face that gives your interface personality.",
+  "severity": "warning",
+  "category": "slop",
+  "file": "styles.css",
+  "line": 12,
+  "snippet": "font-family: 'Inter"
+ },
+ {
+  "antipattern": "overused-font",
+  "name": "Overused font",
+  "description": "Inter, Roboto, Fraunces, Geist, Plus Jakarta Sans, and Space Grotesk are used on so many sites they no longer feel distinctive. Each new wave of AI-generated UIs converges on the same handful of faces. Choose a face that gives your interface personality.",
+  "severity": "warning",
+  "category": "slop",
+  "file": "styles.css",
+  "line": 47,
+  "snippet": "font-family: 'Montserrat"
+ },
+ {
+  "antipattern": "overused-font",
+  "name": "Overused font",
+  "description": "Inter, Roboto, Fraunces, Geist, Plus Jakarta Sans, and Space Grotesk are used on so many sites they no longer feel distinctive. Each new wave of AI-generated UIs converges on the same handful of faces. Choose a face that gives your interface personality.",
+  "severity": "warning",
+  "category": "slop",
+  "file": "styles.css",
+  "line": 62,
+  "snippet": "font-family: 'Montserrat"
+ },
+ {
+  "antipattern": "overused-font",
+  "name": "Overused font",
+  "description": "Inter, Roboto, Fraunces, Geist, Plus Jakarta Sans, and Space Grotesk are used on so many sites they no longer feel distinctive. Each new wave of AI-generated UIs converges on the same handful of faces. Choose a face that gives your interface personality.",
+  "severity": "warning",
+  "category": "slop",
+  "file": "styles.css",
+  "line": 244,
+  "snippet": "font-family: 'Montserrat"
+ },
+ {
+  "antipattern": "overused-font",
+  "name": "Overused font",
+  "description": "Inter, Roboto, Fraunces, Geist, Plus Jakarta Sans, and Space Grotesk are used on so many sites they no longer feel distinctive. Each new wave of AI-generated UIs converges on the same handful of faces. Choose a face that gives your interface personality.",
+  "severity": "warning",
+  "category": "slop",
+  "file": "styles.css",
+  "line": 469,
+  "snippet": "font-family: 'Montserrat"
+ },
+ {
+  "antipattern": "overused-font",
+  "name": "Overused font",
+  "description": "Inter, Roboto, Fraunces, Geist, Plus Jakarta Sans, and Space Grotesk are used on so many sites they no longer feel distinctive. Each new wave of AI-generated UIs converges on the same handful of faces. Choose a face that gives your interface personality.",
+  "severity": "warning",
+  "category": "slop",
+  "file": "styles.css",
+  "line": 538,
+  "snippet": "font-family: 'Inter"
+ },
+ {
+  "antipattern": "overused-font",
+  "name": "Overused font",
+  "description": "Inter, Roboto, Fraunces, Geist, Plus Jakarta Sans, and Space Grotesk are used on so many sites they no longer feel distinctive. Each new wave of AI-generated UIs converges on the same handful of faces. Choose a face that gives your interface personality.",
+  "severity": "warning",
+  "category": "slop",
+  "file": "styles.css",
+  "line": 733,
+  "snippet": "font-family: 'Montserrat"
+ },
+ {
+  "antipattern": "gradient-text",
+  "name": "Gradient text",
+  "description": "Gradient text is decorative rather than meaningful \u2014 a common AI tell, especially on headings and metrics. Use solid colors for text.",
+  "severity": "warning",
+  "category": "slop",
+  "file": "styles.css",
+  "line": 118,
+  "snippet": "background-clip: text + gradient"
+ },
+ {
+  "antipattern": "gradient-text",
+  "name": "Gradient text",
+  "description": "Gradient text is decorative rather than meaningful \u2014 a common AI tell, especially on headings and metrics. Use solid colors for text.",
+  "severity": "warning",
+  "category": "slop",
+  "file": "styles.css",
+  "line": 225,
+  "snippet": "background-clip: text + gradient"
+ },
+ {
+  "antipattern": "gradient-text",
+  "name": "Gradient text",
+  "description": "Gradient text is decorative rather than meaningful \u2014 a common AI tell, especially on headings and metrics. Use solid colors for text.",
+  "severity": "warning",
+  "category": "slop",
+  "file": "styles.css",
+  "line": 504,
+  "snippet": "background-clip: text + gradient"
+ },
+ {
+  "antipattern": "gradient-text",
+  "name": "Gradient text",
+  "description": "Gradient text is decorative rather than meaningful \u2014 a common AI tell, especially on headings and metrics. Use solid colors for text.",
+  "severity": "warning",
+  "category": "slop",
+  "file": "styles.css",
+  "line": 653,
+  "snippet": "background-clip: text + gradient"
+ }
+]

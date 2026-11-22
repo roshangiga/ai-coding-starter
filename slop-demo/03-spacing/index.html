@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RoomBook: meeting room booking</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Inter:wght@300;400;500&family=Playfair+Display:wght@700;900&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="changes.css"><!-- presenter overlay -->
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-logo">🏢 RoomBook</div>
+    <div class="nav-links">
+      <div class="nav-link" onclick="scrollToSection('rooms')">Rooms</div>
+      <div class="nav-link" onclick="scrollToSection('book')">Book</div>
+      <div class="nav-link" onclick="scrollToSection('my-bookings')">My Bookings</div>
+      <div class="nav-cta" onclick="scrollToSection('book')">🚀 Book a room</div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1 class="hero-title gradient-text">Book a meeting room</h1>
+    <div class="hero-actions">
+      <button class="btn-primary-gradient" onclick="scrollToSection('book')">Book a room →</button>
+      <a class="hero-link" onclick="scrollToSection('rooms')">See all rooms ✨</a>
+    </div>
+    <div id="welcome-banner" class="welcome-banner"></div>
+  </section>
+
+  <!-- Rooms Section -->
+  <section id="rooms" class="rooms-section">
+    <h2 class="section-title">Rooms</h2>
+
+    <div class="filter-bar">
+      <input type="text" id="room-search" class="search-input" placeholder="🔍 Search rooms or try capacity > 6 ...">
+      <div class="filter-chip" onclick="filterRooms('all')">All</div>
+      <div class="filter-chip" onclick="filterRooms('available')">✅ Available</div>
+      <div class="filter-chip" onclick="filterRooms('large')">👥 Large</div>
+      <div class="filter-chip" onclick="filterRooms('popular')">🔥 Popular</div>
+    </div>
+
+    <div id="rooms-grid" class="rooms-grid"></div>
+  </section>
+
+  <!-- Booking Form -->
+  <section id="book" class="booking-section">
+    <div class="booking-wrapper glass">
+      <h2 class="section-title gradient-text">Book a room</h2>
+
+      <div class="form-card">
+        <div class="form-card-inner">
+          <div class="form-row">
+            <select id="booking-room" class="form-input"></select>
+          </div>
+          <div class="form-row">
+            <input type="text" id="booking-title" class="form-input" placeholder="Meeting title">
+          </div>
+          <div class="form-row form-row-split">
+            <input type="date" id="booking-date" class="form-input">
+            <select id="booking-start" class="form-input"></select>
+            <select id="booking-end" class="form-input"></select>
+          </div>
+          <div class="form-row">
+            <input type="number" id="booking-attendees" class="form-input" placeholder="Number of attendees">
+          </div>
+          <div class="form-row">
+            <input type="text" id="booking-name" class="form-input" placeholder="Your name">
+          </div>
+          <div id="booking-message" class="booking-message"></div>
+          <div class="submit-booking-btn" onclick="handleBookingSubmit()">✨ Book room ✨</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- My Bookings -->
+  <section id="my-bookings" class="my-bookings-section">
+    <h2 class="section-title">My Bookings</h2>
+    <div id="my-bookings-list" class="my-bookings-list"></div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-bottom">🏢 RoomBook, internal meeting-room booking</div>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+  <!-- presenter overlay, not part of the app -->
+  <script src="changes.data.js"></script>
+  <script src="changes.js"></script>
+</body>
+</html>

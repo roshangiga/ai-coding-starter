@@ -1,0 +1,5 @@
+.DS_Store
+app/
+.claude/settings.local.json
+factory/board.md
+board/

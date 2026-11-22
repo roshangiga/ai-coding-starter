@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RoomBook: meeting room booking</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="changes.css"><!-- presenter overlay -->
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar" aria-label="Main">
+      <a class="nav-logo" href="#main">RoomBook</a>
+      <div class="nav-links">
+        <a class="nav-link" href="#rooms">Rooms</a>
+        <a class="nav-link" href="#book">Book</a>
+        <a class="nav-link" href="#my-bookings">My Bookings</a>
+        <a class="btn btn-primary btn-sm nav-cta" href="#book">Book a room</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1 class="hero-title">Book a meeting room</h1>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#book">Book a room</a>
+      <a class="btn btn-secondary" href="#rooms">See all rooms</a>
+    </div>
+    <p id="welcome-banner" class="welcome-banner"></p>
+  </section>
+
+  <!-- Rooms Section -->
+  <section id="rooms" class="rooms-section">
+    <h2 class="section-title">Rooms</h2>
+
+    <div class="filter-bar" role="group" aria-label="Filter rooms">
+      <label class="visually-hidden" for="room-search">Search rooms</label>
+      <input type="search" id="room-search" class="search-input" placeholder="Search rooms or try capacity > 6 ...">
+      <button type="button" class="btn btn-secondary btn-sm filter-chip" data-filter="all" aria-pressed="true" onclick="filterRooms('all')">All</button>
+      <button type="button" class="btn btn-secondary btn-sm filter-chip" data-filter="available" aria-pressed="false" onclick="filterRooms('available')">Available</button>
+      <button type="button" class="btn btn-secondary btn-sm filter-chip" data-filter="large" aria-pressed="false" onclick="filterRooms('large')">Large</button>
+      <button type="button" class="btn btn-secondary btn-sm filter-chip" data-filter="popular" aria-pressed="false" onclick="filterRooms('popular')">Popular</button>
+    </div>
+
+    <div id="rooms-grid" class="rooms-grid" aria-live="polite"></div>
+  </section>
+
+  <!-- Booking Form -->
+  <section id="book" class="booking-section">
+    <div class="booking-wrapper">
+      <h2 class="section-title">Book a room</h2>
+
+      <div class="form-card">
+        <div class="form-card-inner">
+          <div class="form-row">
+            <label class="form-label" for="booking-room">Room</label>
+            <select id="booking-room" class="form-input" required></select>
+          </div>
+          <div class="form-row">
+            <label class="form-label" for="booking-title">Meeting title</label>
+            <input type="text" id="booking-title" class="form-input" required>
+          </div>
+          <div class="form-row form-row-split">
+            <div>
+              <label class="form-label" for="booking-date">Date</label>
+              <input type="date" id="booking-date" class="form-input" required>
+            </div>
+            <div>
+              <label class="form-label" for="booking-start">Start</label>
+              <select id="booking-start" class="form-input" required></select>
+            </div>
+            <div>
+              <label class="form-label" for="booking-end">End</label>
+              <select id="booking-end" class="form-input" required></select>
+            </div>
+          </div>
+          <div class="form-row">
+            <label class="form-label" for="booking-attendees">Attendees</label>
+            <input type="number" id="booking-attendees" class="form-input" min="1" inputmode="numeric">
+          </div>
+          <div class="form-row">
+            <label class="form-label" for="booking-name">Your name</label>
+            <input type="text" id="booking-name" class="form-input" autocomplete="name">
+          </div>
+          <div id="booking-message" class="booking-message" role="status" aria-live="polite"></div>
+          <button type="button" class="btn btn-primary btn-block" onclick="handleBookingSubmit()">Book room</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- My Bookings -->
+  <section id="my-bookings" class="my-bookings-section">
+    <h2 class="section-title">My Bookings</h2>
+    <div id="my-bookings-list" class="my-bookings-list"></div>
+  </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p class="footer-bottom">RoomBook, internal meeting-room booking</p>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+  <!-- presenter overlay, not part of the app -->
+  <script src="changes.data.js"></script>
+  <script src="changes.js"></script>
+</body>
+</html>

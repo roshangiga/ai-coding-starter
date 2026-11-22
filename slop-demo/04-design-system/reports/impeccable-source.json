@@ -1,0 +1,62 @@
+[
+ {
+  "antipattern": "low-contrast",
+  "name": "Low contrast text",
+  "description": "Text does not meet WCAG AA contrast requirements (4.5:1 for body, 3:1 for large text). Increase the contrast between text and background.",
+  "severity": "warning",
+  "category": "quality",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "2.6:1 (need 4.5:1) \u2014 text #a1a1aa on #ffffff (and 2 more)"
+ },
+ {
+  "antipattern": "low-contrast",
+  "name": "Low contrast text",
+  "description": "Text does not meet WCAG AA contrast requirements (4.5:1 for body, 3:1 for large text). Increase the contrast between text and background.",
+  "severity": "warning",
+  "category": "quality",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "placeholder \"Meeting title\" 1.5:1 (need 4.5:1) \u2014 text #d4d4d8 on #ffffff"
+ },
+ {
+  "antipattern": "low-contrast",
+  "name": "Low contrast text",
+  "description": "Text does not meet WCAG AA contrast requirements (4.5:1 for body, 3:1 for large text). Increase the contrast between text and background.",
+  "severity": "warning",
+  "category": "quality",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "placeholder \"Number of attendees\" 1.5:1 (need 4.5:1) \u2014 text #d4d4d8 on #ffffff"
+ },
+ {
+  "antipattern": "low-contrast",
+  "name": "Low contrast text",
+  "description": "Text does not meet WCAG AA contrast requirements (4.5:1 for body, 3:1 for large text). Increase the contrast between text and background.",
+  "severity": "warning",
+  "category": "quality",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "placeholder \"Your name\" 1.5:1 (need 4.5:1) \u2014 text #d4d4d8 on #ffffff"
+ },
+ {
+  "antipattern": "gray-on-color",
+  "name": "Gray text on colored background",
+  "description": "Gray text looks washed out on colored backgrounds. Use a darker shade of the background color instead, or white/near-white for contrast.",
+  "severity": "warning",
+  "category": "quality",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "text #4b4b6b on bg #1e1b4b"
+ },
+ {
+  "antipattern": "low-contrast",
+  "name": "Low contrast text",
+  "description": "Text does not meet WCAG AA contrast requirements (4.5:1 for body, 3:1 for large text). Increase the contrast between text and background.",
+  "severity": "warning",
+  "category": "quality",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "1.9:1 (need 4.5:1) \u2014 text #4b4b6b on #1e1b4b"
+ }
+]

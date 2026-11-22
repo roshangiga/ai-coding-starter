@@ -1,0 +1,454 @@
+/*
+ * Presenter overlay styles (not part of the app). Every rule is scoped to .rbx* classes and sets its
+ * own colours and type, so it looks the same on every step and in both themes of step 06.
+ * Look: black and safety orange, like a presenter's marker, distinct from any step's design.
+ */
+.rbx,
+.rbx * {
+  box-sizing: border-box;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+html.rbx-off .rbx-bar,
+html.rbx-off .rbx-layer,
+html.rbx-off .rbx-pop,
+html.rbx-off .rbx-reports,
+html.rbx-off .rbx-lightbox {
+  display: none !important;
+}
+
+/* Header bar: in normal flow before the app, so the app's own layout is untouched below it */
+.rbx-bar {
+  position: relative;
+  z-index: 2147482000;
+  margin: 0;
+  padding: 8px 16px;
+  background: #111111;
+  color: #f5f5f5;
+  border-bottom: 3px solid #ff6a1a;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.rbx-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 12px;
+}
+
+.rbx-tag {
+  display: inline-block;
+  padding: 1px 6px;
+  border-radius: 3px;
+  background: #ff6a1a;
+  color: #111111;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.rbx-step {
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.rbx-sum {
+  flex: 1 1 320px;
+  color: #e6e6e6;
+}
+
+.rbx-counts {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+  color: #ffd2b8;
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+}
+
+.rbx-nav {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+}
+
+.rbx-nav a {
+  color: #ffffff;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.rbx-nav a:hover {
+  color: #ff9a5c;
+}
+
+.rbx-more {
+  display: none;
+  margin: 0;
+  padding: 2px 10px;
+  border: 1px solid #ff6a1a;
+  border-radius: 4px;
+  background: transparent;
+  color: #ffffff;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.rbx-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px 16px;
+  margin: 6px 0 0;
+  padding: 0;
+  list-style: none;
+  color: #e6e6e6;
+  font-size: 12px;
+}
+
+.rbx-num {
+  display: inline-grid;
+  place-items: center;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 4px;
+  border-radius: 9px;
+  background: #ff6a1a;
+  color: #111111;
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+@media (max-width: 700px) {
+  .rbx-more {
+    display: inline-block;
+  }
+  .rbx-sum,
+  .rbx-list {
+    display: none;
+  }
+  .rbx-bar.rbx-open .rbx-sum {
+    display: block;
+    flex-basis: 100%;
+  }
+  .rbx-bar.rbx-open .rbx-list {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Pins */
+.rbx-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  z-index: 2147482500;
+}
+
+.rbx-pin {
+  position: absolute;
+  z-index: 2147482500;
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  margin: 0;
+  padding: 0;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  background: #ff6a1a;
+  color: #111111;
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: 0 0 0 1px #111111, 0 2px 6px rgba(0, 0, 0, 0.45);
+}
+
+.rbx-pin:hover,
+.rbx-pin[aria-expanded="true"] {
+  background: #111111;
+  color: #ff6a1a;
+  border-color: #ff6a1a;
+}
+
+.rbx-pin:focus-visible,
+.rbx-toggle input:focus-visible,
+.rbx-more:focus-visible,
+.rbx-nav a:focus-visible {
+  outline: 3px solid #ff6a1a !important;
+  outline-offset: 2px !important;
+}
+
+/* Popover */
+.rbx-pop {
+  position: fixed;
+  z-index: 2147483000;
+  max-height: calc(100vh - 16px);
+  overflow: auto;
+  padding: 12px;
+  border: 2px solid #ff6a1a;
+  border-radius: 8px;
+  background: #111111;
+  color: #f5f5f5;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.rbx-pop[hidden] {
+  display: none;
+}
+
+.rbx-pop-title {
+  margin: 0 0 8px;
+  font-weight: 600;
+}
+
+.rbx-pair {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.rbx-fig {
+  margin: 0;
+}
+
+.rbx-fig figcaption {
+  margin: 0 0 4px;
+  color: #ffd2b8;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.rbx-fig img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #555555;
+  border-radius: 4px;
+  background: #ffffff;
+  cursor: zoom-in;
+}
+
+.rbx-hint {
+  margin: 8px 0 0;
+  color: #bdbdbd;
+  font-size: 12px;
+}
+
+.rbx-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 2147483600;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.88);
+  cursor: zoom-out;
+}
+
+.rbx-lightbox[hidden] {
+  display: none;
+}
+
+.rbx-lightbox img {
+  max-width: 96vw;
+  max-height: calc(100vh - 64px);
+  object-fit: contain;
+  border: 2px solid #ff6a1a;
+  border-radius: 4px;
+  background: #ffffff;
+}
+
+.rbx-lightbox .rbx-hint {
+  color: #ffffff;
+}
+
+/* Toggle */
+.rbx-toggle {
+  position: fixed;
+  right: 12px;
+  bottom: 12px;
+  z-index: 2147483200;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0;
+  padding: 6px 10px;
+  border: 2px solid #ff6a1a;
+  border-radius: 6px;
+  background: #111111;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+}
+
+.rbx-toggle input {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  accent-color: #ff6a1a;
+}
+
+/* Reports after the footer */
+.rbx-reports {
+  margin: 0;
+  padding: 0 0 64px;
+  background: #161616;
+  color: #eeeeee;
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.rbx-band {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 12px;
+  padding: 16px;
+  background: repeating-linear-gradient(-45deg, #ff6a1a 0 14px, #111111 14px 28px);
+}
+
+.rbx-band h2 {
+  margin: 0;
+  padding: 4px 10px;
+  border-radius: 4px;
+  background: #111111;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.rbx-report {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 16px 8px;
+}
+
+.rbx-report h3 {
+  margin: 0 0 4px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.rbx-delta {
+  margin: 0 0 4px;
+  color: #ffd2b8;
+  font-size: 15px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.rbx-note,
+.rbx-src {
+  margin: 0 0 8px;
+  color: #cfcfcf;
+}
+
+.rbx-src {
+  margin-top: 8px;
+  font-family: ui-monospace, Menlo, Consolas, monospace;
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+
+.rbx-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 8px 0 12px;
+  padding: 0;
+  list-style: none;
+}
+
+.rbx-chips li {
+  padding: 2px 8px;
+  border: 1px solid #555555;
+  border-radius: 4px;
+  color: #eeeeee;
+}
+
+.rbx-chips strong {
+  color: #ff9a5c;
+}
+
+.rbx-table-wrap {
+  overflow-x: auto;
+  border: 1px solid #333333;
+  border-radius: 4px;
+}
+
+.rbx-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+
+.rbx-table th,
+.rbx-table td {
+  padding: 6px 8px;
+  border-bottom: 1px solid #2c2c2c;
+  text-align: left;
+  vertical-align: top;
+}
+
+.rbx-table th {
+  background: #222222;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.rbx-table td {
+  color: #e6e6e6;
+}
+
+.rbx-cell-key {
+  white-space: nowrap;
+  font-weight: 600;
+  color: #ffd2b8 !important;
+}
+
+@media (max-width: 700px) {
+  .rbx-table thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+  }
+  .rbx-table,
+  .rbx-table tbody,
+  .rbx-table tr,
+  .rbx-table td {
+    display: block;
+    width: 100%;
+  }
+  .rbx-table tr {
+    padding: 6px 0;
+    border-bottom: 1px solid #2c2c2c;
+  }
+  .rbx-table td {
+    padding: 2px 8px;
+    border: 0;
+  }
+  .rbx-cell-key {
+    white-space: normal;
+  }
+}

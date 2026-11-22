@@ -1,0 +1,184 @@
+:root {
+  --md-ref-typeface-brand: 'Inter', sans-serif;
+  --md-ref-typeface-plain: 'Inter', sans-serif;
+  --md-ref-typeface-code: 'Fira Code', 'Monaco', 'Consolas', monospace;
+
+  --md-sys-shape-corner-extra-small: 0.5rem;
+  --md-sys-shape-corner-small: 0.75rem;
+  --md-sys-shape-corner-medium: 1rem;
+  --md-sys-shape-corner-large: 1.5rem;
+  --md-sys-shape-corner-extra-large: 1.75rem;
+  --md-sys-shape-corner-full: 9999px;
+
+  --md-sys-typescale-body-small-font: var(--md-ref-typeface-plain);
+  --md-sys-typescale-body-small-size: 0.8125rem;
+  --md-sys-typescale-body-small-line-height: 1.35;
+  --md-sys-typescale-body-small-weight: 500;
+  --md-sys-typescale-body-medium-font: var(--md-ref-typeface-plain);
+  --md-sys-typescale-body-medium-size: 0.9375rem;
+  --md-sys-typescale-body-medium-line-height: 1.55;
+  --md-sys-typescale-body-medium-weight: 500;
+  --md-sys-typescale-body-large-font: var(--md-ref-typeface-plain);
+  --md-sys-typescale-body-large-size: 1rem;
+  --md-sys-typescale-body-large-line-height: 1.6;
+  --md-sys-typescale-body-large-weight: 500;
+  --md-sys-typescale-label-small-font: var(--md-ref-typeface-brand);
+  --md-sys-typescale-label-small-size: 0.6875rem;
+  --md-sys-typescale-label-small-line-height: 1.2;
+  --md-sys-typescale-label-small-weight: 600;
+  --md-sys-typescale-label-medium-font: var(--md-ref-typeface-brand);
+  --md-sys-typescale-label-medium-size: 0.75rem;
+  --md-sys-typescale-label-medium-line-height: 1.2;
+  --md-sys-typescale-label-medium-weight: 600;
+  --md-sys-typescale-label-large-font: var(--md-ref-typeface-brand);
+  --md-sys-typescale-label-large-size: var(--app-font-size-body);
+  --md-sys-typescale-label-large-line-height: 1.25;
+  --md-sys-typescale-label-large-weight: 600;
+  --md-sys-typescale-title-small-font: var(--md-ref-typeface-brand);
+  --md-sys-typescale-title-small-size: 0.9375rem;
+  --md-sys-typescale-title-small-line-height: 1.3;
+  --md-sys-typescale-title-small-weight: 600;
+  --md-sys-typescale-title-medium-font: var(--md-ref-typeface-brand);
+  --md-sys-typescale-title-medium-size: 1rem;
+  --md-sys-typescale-title-medium-line-height: 1.35;
+  --md-sys-typescale-title-medium-weight: 600;
+  --md-sys-typescale-title-large-font: var(--md-ref-typeface-brand);
+  --md-sys-typescale-title-large-size: 1.25rem;
+  --md-sys-typescale-title-large-line-height: 1.35;
+  --md-sys-typescale-title-large-weight: 700;
+  --md-sys-typescale-headline-small-font: var(--md-ref-typeface-brand);
+  --md-sys-typescale-headline-small-size: 1.5rem;
+  --md-sys-typescale-headline-small-line-height: 1.2;
+  --md-sys-typescale-headline-small-weight: 700;
+  --md-sys-typescale-headline-medium-font: var(--md-ref-typeface-brand);
+  --md-sys-typescale-headline-medium-size: 1.875rem;
+  --md-sys-typescale-headline-medium-line-height: 1.15;
+  --md-sys-typescale-headline-medium-weight: 700;
+
+  --md-sys-elevation-level0: none;
+  --md-sys-elevation-level1: 0 1px 2px rgba(0, 0, 0, 0.08), 0 1px 3px rgba(0, 0, 0, 0.06);
+  --md-sys-elevation-level2: 0 6px 18px rgba(15, 23, 42, 0.08), 0 2px 6px rgba(15, 23, 42, 0.06);
+  --md-sys-elevation-level3: 0 14px 34px rgba(15, 23, 42, 0.14), 0 4px 12px rgba(15, 23, 42, 0.08);
+
+  --md-sys-state-hover-opacity: 0.08;
+  --md-sys-state-focus-opacity: 0.12;
+  --md-sys-state-pressed-opacity: 0.12;
+  --md-sys-state-dragged-opacity: 0.16;
+}
+
+.dark {
+  --md-sys-color-primary: #7fcfff;
+  --md-sys-color-on-primary: #00344f;
+  --md-sys-color-primary-container: #0c4564;
+  --md-sys-color-on-primary-container: #d3eeff;
+  --md-sys-color-secondary: #c7c0ff;
+  --md-sys-color-on-secondary: #31285c;
+  --md-sys-color-secondary-container: #493d76;
+  --md-sys-color-on-secondary-container: #e8e0ff;
+  --md-sys-color-tertiary: #ffbfd3;
+  --md-sys-color-on-tertiary: #5f1e39;
+  --md-sys-color-tertiary-container: #7a3550;
+  --md-sys-color-on-tertiary-container: #ffd9e4;
+  --md-sys-color-error: #ffb4ab;
+  --md-sys-color-on-error: #690005;
+  --md-sys-color-error-container: #93000a;
+  --md-sys-color-on-error-container: #ffdad6;
+  --md-sys-color-background: var(--app-dark-canvas);
+  --md-sys-color-on-background: #f3efe5;
+  --md-sys-color-surface: #1a1a1a;
+  --md-sys-color-on-surface: #f3efe5;
+  --md-sys-color-surface-dim: #141414;
+  --md-sys-color-surface-bright: #2a2824;
+  --md-sys-color-surface-container-lowest: #111111;
+  --md-sys-color-surface-container-low: #181816;
+  --md-sys-color-surface-container: #1f1f1d;
+  --md-sys-color-surface-container-high: #262625;
+  --md-sys-color-surface-container-highest: #30302f;
+  --md-sys-color-surface-variant: #2b2d31;
+  --md-sys-color-on-surface-variant: #cbc5bd;
+  --md-sys-color-outline: rgba(255, 255, 255, 0.18);
+  --md-sys-color-outline-variant: rgba(255, 255, 255, 0.1);
+  --md-sys-color-inverse-surface: #f3efe5;
+  --md-sys-color-inverse-on-surface: #2a2824;
+  --md-sys-color-inverse-primary: #0066a0;
+  --md-sys-color-shadow: rgba(0, 0, 0, 0.32);
+  --md-sys-color-scrim: rgba(0, 0, 0, 0.52);
+  --md-sys-color-surface-tint: #7fcfff;
+}
+
+.light {
+  --md-sys-color-primary: #0066a0;
+  --md-sys-color-on-primary: #ffffff;
+  --md-sys-color-primary-container: #d1ecff;
+  --md-sys-color-on-primary-container: #001d33;
+  --md-sys-color-secondary: #5e5290;
+  --md-sys-color-on-secondary: #ffffff;
+  --md-sys-color-secondary-container: #e7deff;
+  --md-sys-color-on-secondary-container: #1a1243;
+  --md-sys-color-tertiary: #96506e;
+  --md-sys-color-on-tertiary: #ffffff;
+  --md-sys-color-tertiary-container: #ffd9e6;
+  --md-sys-color-on-tertiary-container: #3d0b27;
+  --md-sys-color-error: #b3261e;
+  --md-sys-color-on-error: #ffffff;
+  --md-sys-color-error-container: #f9dedc;
+  --md-sys-color-on-error-container: #410e0b;
+  /* Light conversation panel: the light canvas (the sidebar takes the light surface). */
+  --md-sys-color-background: var(--app-light-canvas);
+  --md-sys-color-on-background: #171c21;
+  --md-sys-color-surface: #fbfcff;
+  --md-sys-color-on-surface: #171c21;
+  --md-sys-color-surface-dim: #dde2e8;
+  --md-sys-color-surface-bright: #fbfcff;
+  --md-sys-color-surface-container-lowest: #ffffff;
+  --md-sys-color-surface-container-low: #f5f7fb;
+  --md-sys-color-surface-container: #edf2f8;
+  --md-sys-color-surface-container-high: #e7ecf2;
+  --md-sys-color-surface-container-highest: #dde3ea;
+  --md-sys-color-surface-variant: #d9e2ee;
+  --md-sys-color-on-surface-variant: #3f4754;
+  --md-sys-color-outline: rgba(55, 65, 81, 0.34);
+  --md-sys-color-outline-variant: rgba(55, 65, 81, 0.16);
+  --md-sys-color-inverse-surface: #2b3137;
+  --md-sys-color-inverse-on-surface: #edf1f7;
+  --md-sys-color-inverse-primary: #86ceff;
+  --md-sys-color-shadow: rgba(15, 23, 42, 0.12);
+  --md-sys-color-scrim: rgba(15, 23, 42, 0.22);
+  --md-sys-color-surface-tint: #0066a0;
+}
+
+.md-sys-brand {
+  font-family: var(--md-ref-typeface-brand);
+}
+
+.md-sys-plain {
+  font-family: var(--md-ref-typeface-plain);
+}
+
+.md-typescale-body-medium {
+  font-family: var(--md-sys-typescale-body-medium-font);
+  font-size: var(--md-sys-typescale-body-medium-size);
+  line-height: var(--md-sys-typescale-body-medium-line-height);
+  font-weight: var(--md-sys-typescale-body-medium-weight);
+}
+
+.md-typescale-label-large {
+  font-family: var(--md-sys-typescale-label-large-font);
+  font-size: var(--md-sys-typescale-label-large-size);
+  line-height: var(--md-sys-typescale-label-large-line-height);
+  font-weight: var(--md-sys-typescale-label-large-weight);
+}
+
+.md-typescale-title-medium {
+  font-family: var(--md-sys-typescale-title-medium-font);
+  font-size: var(--md-sys-typescale-title-medium-size);
+  line-height: var(--md-sys-typescale-title-medium-line-height);
+  font-weight: var(--md-sys-typescale-title-medium-weight);
+}
+
+.md-typescale-title-large {
+  font-family: var(--md-sys-typescale-title-large-font);
+  font-size: var(--md-sys-typescale-title-large-size);
+  line-height: var(--md-sys-typescale-title-large-line-height);
+  font-weight: var(--md-sys-typescale-title-large-weight);
+}

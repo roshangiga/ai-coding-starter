@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RoomBook cleanup steps</title>
+  <style>
+    :root { color-scheme: light dark; --bg: #ffffff; --text: #171c21; --muted: #4b5563; --line: rgba(23, 28, 33, 0.12); --link: #0066a0; }
+    @media (prefers-color-scheme: dark) { :root { --bg: #0d0d0d; --text: #f2f4f7; --muted: #b9c0c9; --line: rgba(242, 244, 247, 0.14); --link: #7fcfff; } }
+    body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+    main { max-width: 44rem; margin: 0 auto; padding: 48px 16px; }
+    h1 { margin: 0 0 8px; font-size: 1.75rem; }
+    .lead { margin: 0 0 32px; color: var(--muted); }
+    ol { margin: 0; padding: 0; list-style: none; }
+    li { padding: 16px 0; border-top: 1px solid var(--line); }
+    li a { color: var(--link); font-weight: 600; font-size: 1.125rem; }
+    li p { margin: 4px 0 0; }
+    .counts { color: var(--muted); font-size: 0.875rem; font-variant-numeric: tabular-nums; }
+    a:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; }
+    footer { margin-top: 32px; color: var(--muted); font-size: 0.875rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>RoomBook cleanup steps</h1>
+    <p class="lead">The same meeting-room booking app, cleaned up one kind of slop at a time. Each step keeps every earlier fix. Counts are from the served page at 1440px, without the presenter overlay; the change in brackets is against the previous version.</p>
+    <ol>
+      <li>
+        <a href="00-original/index.html">Original</a>
+        <p>The vibe-coded starting point: every slop category is present.</p>
+        <p class="counts">Impeccable 122 findings (104 counted, 18 advisory) &middot; Snyk 8 issues</p>
+      </li>
+      <li>
+        <a href="01-pills/index.html">01 Pills</a>
+        <p>Removed badges, chips and pills with no information; availability is plain coloured text.</p>
+        <p class="counts">Impeccable 90 (−32) findings (72 counted, 18 advisory) &middot; Snyk 8 (±0) issues</p>
+      </li>
+      <li>
+        <a href="02-clutter/index.html">02 Clutter</a>
+        <p>Removed eyebrows, subtitles, stats, logos, testimonials and the CTA band; plain copy.</p>
+        <p class="counts">Impeccable 39 (−51) findings (33 counted, 6 advisory) &middot; Snyk 8 (±0) issues</p>
+      </li>
+      <li>
+        <a href="03-spacing/index.html">03 Spacing</a>
+        <p>One 4/8px spacing scale, aligned room grid, one section rhythm.</p>
+        <p class="counts">Impeccable 39 (±0) findings (33 counted, 6 advisory) &middot; Snyk 8 (±0) issues</p>
+      </li>
+      <li>
+        <a href="04-design-system/index.html">04 Design system</a>
+        <p>Tokens, one font, one button component, one radius scale; no gradients, glass or emoji.</p>
+        <p class="counts">Impeccable 10 (−29) findings (10 counted, 0 advisory) &middot; Snyk 8 (±0) issues</p>
+      </li>
+      <li>
+        <a href="05-contrast/index.html">05 Contrast</a>
+        <p>WCAG AA contrast, 14px/12px minimum text, real buttons and links, labels, focus styles.</p>
+        <p class="counts">Impeccable 0 (−10) findings (0 counted, 0 advisory) &middot; Snyk 8 (±0) issues</p>
+      </li>
+      <li>
+        <a href="06-final-mt/index.html">06 Final MT</a>
+        <p>MT (Material) design system from mytGPT: light and dark themes, photo room cards with a quiet status line, two-column booking area.</p>
+        <p class="counts">Impeccable 1 (+1) findings (1 counted, 0 advisory) &middot; Snyk 8 (±0) issues</p>
+      </li>
+    </ol>
+    <footer>Snyk stays about flat on purpose: the code-level slop (eval, XSS, secrets, the overlap bug, fake tests) is left for the code-review demo. Each page has a presenter overlay with numbered change pins and the full reports below its footer; untick "Show changes" to hide it.</footer>
+  </main>
+</body>
+</html>

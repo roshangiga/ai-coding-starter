@@ -1,0 +1,272 @@
+[
+ {
+  "antipattern": "ai-color-palette",
+  "name": "AI color palette",
+  "description": "Purple/violet gradients and cyan-on-dark are the most recognizable tells of AI-generated UIs. A gradient in one of those hues is the tell on its own; flat neon ink on a dark ground is charged once a second tell hue joins it. Choose a distinctive, intentional palette.",
+  "severity": "warning",
+  "category": "slop",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "Purple/violet text (#4c1d95) on heading"
+ },
+ {
+  "antipattern": "low-contrast",
+  "name": "Low contrast text",
+  "description": "Text does not meet WCAG AA contrast requirements (4.5:1 for body, 3:1 for large text). Increase the contrast between text and background.",
+  "severity": "warning",
+  "category": "quality",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "2.5:1 (need 4.5:1) \u2014 text #a1a1aa on #fcfcff (and 2 more)"
+ },
+ {
+  "antipattern": "low-contrast",
+  "name": "Low contrast text",
+  "description": "Text does not meet WCAG AA contrast requirements (4.5:1 for body, 3:1 for large text). Increase the contrast between text and background.",
+  "severity": "warning",
+  "category": "quality",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "3.5:1 (need 4.5:1) \u2014 text #ffffff on #ec4899 (gradient on div.nav-cta)"
+ },
+ {
+  "antipattern": "gradient-text",
+  "name": "Gradient text",
+  "description": "Gradient text is decorative rather than meaningful \u2014 a common AI tell, especially on headings and metrics. Use solid colors for text.",
+  "severity": "warning",
+  "category": "slop",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "background-clip: text + gradient"
+ },
+ {
+  "antipattern": "low-contrast",
+  "name": "Low contrast text",
+  "description": "Text does not meet WCAG AA contrast requirements (4.5:1 for body, 3:1 for large text). Increase the contrast between text and background.",
+  "severity": "warning",
+  "category": "quality",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "3.5:1 (need 4.5:1) \u2014 text #ffffff on #ec4899 (gradient on button.btn-primary-gradient)"
+ },
+ {
+  "antipattern": "low-contrast",
+  "name": "Low contrast text",
+  "description": "Text does not meet WCAG AA contrast requirements (4.5:1 for body, 3:1 for large text). Increase the contrast between text and background.",
+  "severity": "warning",
+  "category": "quality",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "3.8:1 (need 4.5:1) \u2014 text #8b5cf6 on #f3f0ff (and 3 more)"
+ },
+ {
+  "antipattern": "gradient-text",
+  "name": "Gradient text",
+  "description": "Gradient text is decorative rather than meaningful \u2014 a common AI tell, especially on headings and metrics. Use solid colors for text.",
+  "severity": "warning",
+  "category": "slop",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "background-clip: text + gradient"
+ },
+ {
+  "antipattern": "low-contrast",
+  "name": "Low contrast text",
+  "description": "Text does not meet WCAG AA contrast requirements (4.5:1 for body, 3:1 for large text). Increase the contrast between text and background.",
+  "severity": "warning",
+  "category": "quality",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "placeholder \"Meeting title\" 1.4:1 (need 4.5:1) \u2014 text #d4d4d8 on #fcfbff"
+ },
+ {
+  "antipattern": "low-contrast",
+  "name": "Low contrast text",
+  "description": "Text does not meet WCAG AA contrast requirements (4.5:1 for body, 3:1 for large text). Increase the contrast between text and background.",
+  "severity": "warning",
+  "category": "quality",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "placeholder \"Number of attendees\" 1.4:1 (need 4.5:1) \u2014 text #d4d4d8 on #fcfbff"
+ },
+ {
+  "antipattern": "low-contrast",
+  "name": "Low contrast text",
+  "description": "Text does not meet WCAG AA contrast requirements (4.5:1 for body, 3:1 for large text). Increase the contrast between text and background.",
+  "severity": "warning",
+  "category": "quality",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "placeholder \"Your name\" 1.4:1 (need 4.5:1) \u2014 text #d4d4d8 on #fcfbff"
+ },
+ {
+  "antipattern": "low-contrast",
+  "name": "Low contrast text",
+  "description": "Text does not meet WCAG AA contrast requirements (4.5:1 for body, 3:1 for large text). Increase the contrast between text and background.",
+  "severity": "warning",
+  "category": "quality",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "2.0:1 (need 4.5:1) \u2014 text #ffffff on #f093fb (gradient on div.submit-booking-btn)"
+ },
+ {
+  "antipattern": "gray-on-color",
+  "name": "Gray text on colored background",
+  "description": "Gray text looks washed out on colored backgrounds. Use a darker shade of the background color instead, or white/near-white for contrast.",
+  "severity": "warning",
+  "category": "quality",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "text #4b4b6b on bg #1e1b4b"
+ },
+ {
+  "antipattern": "low-contrast",
+  "name": "Low contrast text",
+  "description": "Text does not meet WCAG AA contrast requirements (4.5:1 for body, 3:1 for large text). Increase the contrast between text and background.",
+  "severity": "warning",
+  "category": "quality",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "1.9:1 (need 4.5:1) \u2014 text #4b4b6b on #1e1b4b"
+ },
+ {
+  "antipattern": "overused-font",
+  "name": "Overused font",
+  "description": "Inter, Roboto, Fraunces, Geist, Plus Jakarta Sans, and Space Grotesk are used on so many sites they no longer feel distinctive. Each new wave of AI-generated UIs converges on the same handful of faces. Choose a face that gives your interface personality.",
+  "severity": "warning",
+  "category": "slop",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "Primary font: montserrat"
+ },
+ {
+  "antipattern": "overused-font",
+  "name": "Overused font",
+  "description": "Inter, Roboto, Fraunces, Geist, Plus Jakarta Sans, and Space Grotesk are used on so many sites they no longer feel distinctive. Each new wave of AI-generated UIs converges on the same handful of faces. Choose a face that gives your interface personality.",
+  "severity": "warning",
+  "category": "slop",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "Primary font: inter"
+ },
+ {
+  "antipattern": "nested-cards",
+  "name": "Nested cards",
+  "description": "Cards inside cards create visual noise and excessive depth. Flatten the hierarchy \u2014 use spacing, typography, and dividers instead of nesting containers.",
+  "severity": "warning",
+  "category": "slop",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "Card inside card (div)"
+ },
+ {
+  "antipattern": "ai-color-palette",
+  "name": "AI color palette",
+  "description": "Purple/violet gradients and cyan-on-dark are the most recognizable tells of AI-generated UIs. A gradient in one of those hues is the tell on its own; flat neon ink on a dark ground is charged once a second tell hue joins it. Choose a distinctive, intentional palette.",
+  "severity": "warning",
+  "category": "slop",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "Purple/violet accent colors detected"
+ },
+ {
+  "antipattern": "gradient-text",
+  "name": "Gradient text",
+  "description": "Gradient text is decorative rather than meaningful \u2014 a common AI tell, especially on headings and metrics. Use solid colors for text.",
+  "severity": "warning",
+  "category": "slop",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "background-clip: text + gradient"
+ },
+ {
+  "antipattern": "dark-glow",
+  "name": "Glowing shadow accents",
+  "description": "Colored glow shadows \u2014 a zero-offset chromatic halo (box- or text-shadow) on any background, or any colored blurred shadow on a dark background \u2014 are the default \"cool\" look of AI-generated UIs. Use neutral elevation shadows and subtle, purposeful lighting instead.",
+  "severity": "warning",
+  "category": "slop",
+  "file": "index.html",
+  "line": 0,
+  "snippet": "Colored box-shadow glow (#ec4899) on dark page"
+ },
+ {
+  "antipattern": "side-tab",
+  "name": "Side-tab accent border",
+  "description": "Thick colored border on one side of a card \u2014 the most recognizable tell of AI-generated UIs. Use a subtler accent or remove it entirely.",
+  "severity": "warning",
+  "category": "slop",
+  "file": "styles.css",
+  "line": 430,
+  "snippet": "border-left: 4px solid #a78bfa"
+ },
+ {
+  "antipattern": "overused-font",
+  "name": "Overused font",
+  "description": "Inter, Roboto, Fraunces, Geist, Plus Jakarta Sans, and Space Grotesk are used on so many sites they no longer feel distinctive. Each new wave of AI-generated UIs converges on the same handful of faces. Choose a face that gives your interface personality.",
+  "severity": "warning",
+  "category": "slop",
+  "file": "styles.css",
+  "line": 12,
+  "snippet": "font-family: 'Inter"
+ },
+ {
+  "antipattern": "overused-font",
+  "name": "Overused font",
+  "description": "Inter, Roboto, Fraunces, Geist, Plus Jakarta Sans, and Space Grotesk are used on so many sites they no longer feel distinctive. Each new wave of AI-generated UIs converges on the same handful of faces. Choose a face that gives your interface personality.",
+  "severity": "warning",
+  "category": "slop",
+  "file": "styles.css",
+  "line": 47,
+  "snippet": "font-family: 'Montserrat"
+ },
+ {
+  "antipattern": "overused-font",
+  "name": "Overused font",
+  "description": "Inter, Roboto, Fraunces, Geist, Plus Jakarta Sans, and Space Grotesk are used on so many sites they no longer feel distinctive. Each new wave of AI-generated UIs converges on the same handful of faces. Choose a face that gives your interface personality.",
+  "severity": "warning",
+  "category": "slop",
+  "file": "styles.css",
+  "line": 62,
+  "snippet": "font-family: 'Montserrat"
+ },
+ {
+  "antipattern": "overused-font",
+  "name": "Overused font",
+  "description": "Inter, Roboto, Fraunces, Geist, Plus Jakarta Sans, and Space Grotesk are used on so many sites they no longer feel distinctive. Each new wave of AI-generated UIs converges on the same handful of faces. Choose a face that gives your interface personality.",
+  "severity": "warning",
+  "category": "slop",
+  "file": "styles.css",
+  "line": 301,
+  "snippet": "font-family: 'Montserrat"
+ },
+ {
+  "antipattern": "overused-font",
+  "name": "Overused font",
+  "description": "Inter, Roboto, Fraunces, Geist, Plus Jakarta Sans, and Space Grotesk are used on so many sites they no longer feel distinctive. Each new wave of AI-generated UIs converges on the same handful of faces. Choose a face that gives your interface personality.",
+  "severity": "warning",
+  "category": "slop",
+  "file": "styles.css",
+  "line": 369,
+  "snippet": "font-family: 'Inter"
+ },
+ {
+  "antipattern": "gradient-text",
+  "name": "Gradient text",
+  "description": "Gradient text is decorative rather than meaningful \u2014 a common AI tell, especially on headings and metrics. Use solid colors for text.",
+  "severity": "warning",
+  "category": "slop",
+  "file": "styles.css",
+  "line": 105,
+  "snippet": "background-clip: text + gradient"
+ },
+ {
+  "antipattern": "gradient-text",
+  "name": "Gradient text",
+  "description": "Gradient text is decorative rather than meaningful \u2014 a common AI tell, especially on headings and metrics. Use solid colors for text.",
+  "severity": "warning",
+  "category": "slop",
+  "file": "styles.css",
+  "line": 335,
+  "snippet": "background-clip: text + gradient"
+ }
+]
