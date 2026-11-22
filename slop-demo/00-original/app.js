@@ -26,7 +26,7 @@ var rooms = [
     features: ["📺 TV Screen", "🎤 Mic", "☕ Coffee"],
     isNew: false,
     isPopular: true,
-    image: makeRoomImage("#a78bfa", "#f472b6", "💡")
+    image: "images/room-a.jpg"
   },
   {
     id: 2,
@@ -37,7 +37,7 @@ var rooms = [
     features: ["📺 TV Screen", "📹 Video Call", "🖊️ Whiteboard", "❄️ AC"],
     isNew: true,
     isPopular: false,
-    image: makeRoomImage("#818cf8", "#c084fc", "🚀")
+    image: "images/room-b.jpg"
   },
   {
     id: 3,
@@ -48,7 +48,7 @@ var rooms = [
     features: ["🔇 Quiet", "🪴 Plants"],
     isNew: false,
     isPopular: false,
-    image: makeRoomImage("#f9a8d4", "#fda4af", "🎯")
+    image: "images/room-c.jpg"
   },
   {
     id: 4,
@@ -59,7 +59,7 @@ var rooms = [
     features: ["📽️ Projector", "📹 Video Call", "🖊️ Whiteboard", "🎤 Mic", "☕ Coffee"],
     isNew: false,
     isPopular: true,
-    image: makeRoomImage("#6366f1", "#ec4899", "🏆")
+    image: "images/room-d.jpg"
   },
   {
     id: 5,
@@ -70,7 +70,7 @@ var rooms = [
     features: ["📺 TV Screen", "🖊️ Whiteboard"],
     isNew: true,
     isPopular: false,
-    image: makeRoomImage("#67e8f9", "#a78bfa", "🌊")
+    image: "images/room-e.jpg"
   },
   {
     id: 6,
@@ -81,7 +81,7 @@ var rooms = [
     features: ["📽️ Projector", "🎤 Mic", "📹 Video Call", "🍕 Catering"],
     isNew: false,
     isPopular: true,
-    image: makeRoomImage("#fcd34d", "#f472b6", "🌟")
+    image: "images/room-f.jpg"
   }
 ];
 

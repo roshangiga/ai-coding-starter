@@ -70,7 +70,7 @@ CHANGES = {
         dict(text="One button component (.btn) replaces six button styles", sel=".hero-actions", pos="tr", b=[".hero-actions"], a=[".hero-actions"]),
         dict(text="Emoji icons removed from search, filters and content", sel=".filter-bar", b=[".filter-bar"], a=[".filter-bar"]),
         dict(text="Room card is one surface: nested cards, gradient and hover tilt removed", sel=CARD(1), pos="tr", b=[CARD(1)], a=[CARD(1)]),
-        dict(text="Replaced placeholder art with real room photos (16:9, cover, responsive sizes)", sel=CARD(2) + " .room-image", b=[CARD(2) + " .room-image"], a=[CARD(2) + " .room-image"]),
+        dict(text="Photos in fixed 16:9 boxes with object-fit: cover; resized copies with srcset", sel=CARD(2) + " .room-image", b=[CARD(2) + " .room-image"], a=[CARD(2) + " .room-image"]),
         dict(text="Glass panel and nested form cards flattened", sel=".booking-wrapper", b=[".booking-wrapper"], a=[".booking-wrapper"]),
         dict(text="Booking rows: no side-tab border or inner box", sel="#my-bookings-list .booking-item:nth-child(1)", pos="tr", b=["#my-bookings-list"], a=["#my-bookings-list"]),
     ],
@@ -394,15 +394,19 @@ def overlay(summary):
     print("overlay written")
 
 
+SLOP_PHOTO_STEPS = ["00-original", "01-pills", "02-clutter", "03-spacing"]
 PHOTO_STEPS = ["04-design-system", "05-contrast", "06-final-mt"]
 
 
 def copy_photos():
-    """Optimised copies of ../room-photos/room-*.png for steps 04 to 06: images/room-x.jpg (1200w) and -600.jpg."""
+    """Room photos from ../room-photos/room-*.png.
+    00 to 03 (slop): one full-size 1600px JPG per room, used as-is (no srcset, no size hints).
+    04 to 06: images/room-x.jpg at 1200px plus room-x-600.jpg for srcset."""
     src = os.path.join(os.path.dirname(ROOT), "room-photos")
     if not os.path.isdir(src):
         return
-    for step in PHOTO_STEPS:
+    plan = [(s, ((1600, "", 90),)) for s in SLOP_PHOTO_STEPS] + [(s, ((1200, "", 72), (600, "-600", 74))) for s in PHOTO_STEPS]
+    for step, sizes in plan:
         dst = os.path.join(ROOT, step, "images")
         os.makedirs(dst, exist_ok=True)
         for f in sorted(os.listdir(src)):
@@ -410,12 +414,13 @@ def copy_photos():
                 continue
             base = f[:-4]
             srcf = os.path.join(src, f)
-            for width, suffix, q in ((1200, "", 72), (600, "-600", 74)):
+            for width, suffix, q in sizes:
                 out = os.path.join(dst, base + suffix + ".jpg")
                 if os.path.exists(out) and os.path.getmtime(out) >= os.path.getmtime(srcf):
                     continue
                 im = Image.open(srcf).convert("RGB")
-                im = im.resize((width, round(im.height * width / im.width)), Image.LANCZOS)
+                if im.width != width:
+                    im = im.resize((width, round(im.height * width / im.width)), Image.LANCZOS)
                 im.save(out, "JPEG", quality=q, optimize=True, progressive=True)
                 print("photo", step, os.path.basename(out), os.path.getsize(out) // 1024, "KB")
 

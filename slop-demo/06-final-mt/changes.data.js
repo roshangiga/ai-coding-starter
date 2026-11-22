@@ -88,21 +88,21 @@ window.RBX = {
      "severity": "High",
      "rule": "DOM-based Cross-site Scripting (XSS)",
      "file": "app.js",
-     "line": 139,
+     "line": 142,
      "message": "Unsanitized input from the document location flows into innerHTML, where it is used to dynamically construct the HTML page on client side. This may result in a DOM Based Cross-Site Scripting attack (DOMXSS)."
     },
     {
      "severity": "High",
      "rule": "Code Injection",
      "file": "app.js",
-     "line": 372,
+     "line": 375,
      "message": "Unsanitized input from the document location flows into eval, where it is executed as JavaScript code. This may result in a Code Injection vulnerability."
     },
     {
      "severity": "High",
      "rule": "DOM-based Cross-site Scripting (XSS)",
      "file": "app.js",
-     "line": 402,
+     "line": 405,
      "message": "Unsanitized input from the document location flows into innerHTML, where it is used to dynamically construct the HTML page on client side. This may result in a DOM Based Cross-Site Scripting attack (DOMXSS)."
     },
     {
@@ -137,7 +137,7 @@ window.RBX = {
      "severity": "Medium",
      "rule": "DOM-based Cross-site Scripting (XSS)",
      "file": "app.js",
-     "line": 582,
+     "line": 585,
      "message": "Unsanitized input from browser storage flows into innerHTML, where it is used to dynamically construct the HTML page on client side. This may result in a DOM Based Cross-Site Scripting attack (DOMXSS)."
     }
    ],

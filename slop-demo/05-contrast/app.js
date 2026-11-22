@@ -8,8 +8,11 @@ console.log("Config loaded:", CONFIG);
 function makeRoomImage(color1, color2, emoji) {
   return "data:image/svg+xml;utf8," + encodeURIComponent(
     "<svg xmlns='http://www.w3.org/2000/svg' width='400' height='200'>" +
-    "<rect width='400' height='200' fill='" + color1 + "'/></svg>"
-  ).replace(/'/g, "%27");
+    "<defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'>" +
+    "<stop offset='0' stop-color='" + color1 + "'/><stop offset='1' stop-color='" + color2 + "'/>" +
+    "</linearGradient></defs><rect width='400' height='200' fill='url(#g)'/>" +
+    "<text x='200' y='120' font-size='64' text-anchor='middle'>" + emoji + "</text></svg>"
+  );
 }
 
 // Rooms data
@@ -25,7 +28,7 @@ var rooms = [
     features: ["TV Screen", "Mic", "Coffee"],
     isNew: false,
     isPopular: true,
-    image: makeRoomImage("#ede9fe", "", "")
+    image: "images/room-a.jpg"
   },
   {
     id: 2,
@@ -38,7 +41,7 @@ var rooms = [
     features: ["TV Screen", "Video Call", "Whiteboard", "AC"],
     isNew: true,
     isPopular: false,
-    image: makeRoomImage("#e0e7ff", "", "")
+    image: "images/room-b.jpg"
   },
   {
     id: 3,
@@ -51,7 +54,7 @@ var rooms = [
     features: ["Quiet", "Plants"],
     isNew: false,
     isPopular: false,
-    image: makeRoomImage("#fce7f3", "", "")
+    image: "images/room-c.jpg"
   },
   {
     id: 4,
@@ -64,7 +67,7 @@ var rooms = [
     features: ["Projector", "Video Call", "Whiteboard", "Mic", "Coffee"],
     isNew: false,
     isPopular: true,
-    image: makeRoomImage("#ddd6fe", "", "")
+    image: "images/room-d.jpg"
   },
   {
     id: 5,
@@ -77,7 +80,7 @@ var rooms = [
     features: ["TV Screen", "Whiteboard"],
     isNew: true,
     isPopular: false,
-    image: makeRoomImage("#e0f2fe", "", "")
+    image: "images/room-e.jpg"
   },
   {
     id: 6,
@@ -90,7 +93,7 @@ var rooms = [
     features: ["Projector", "Mic", "Video Call", "Catering"],
     isNew: false,
     isPopular: true,
-    image: makeRoomImage("#fef3c7", "", "")
+    image: "images/room-f.jpg"
   }
 ];
 

@@ -471,8 +471,8 @@
       }
      ],
      "fingerprints": {
-      "0": "2406af3820ad5ca8e0384cd66b99a0d670a60bf23aed1c060ddb40adc048881f",
-      "1": "98ebf12d.4773f344.607187b5.7da15f0a.9cde7c93.dbe83c7e.d51b5096.545e9171.b3e4c2e9.4773f344.c0929a4e.d7919eeb.48434c2f.dbe83c7e.d51b5096.3d3df21d"
+      "1": "98ebf12d.4773f344.607187b5.7da15f0a.9cde7c93.dbe83c7e.d51b5096.545e9171.b3e4c2e9.4773f344.c0929a4e.d7919eeb.48434c2f.dbe83c7e.d51b5096.3d3df21d",
+      "0": "2406af3820ad5ca8e0384cd66b99a0d670a60bf23aed1c060ddb40adc048881f"
      },
      "codeFlows": [
       {
@@ -1623,8 +1623,8 @@
       }
      ],
      "fingerprints": {
-      "0": "a697cc615aed9e4506b056fe40ed295be51a4cfc46109f0d12bacaba28af2a54",
-      "1": "6103dbdb.40d22f60.6de7783c.42c5710a.79a7d027.2e50f823.1c6f65c7.ee5977c3.6103dbdb.40d22f60.673eb66b.59162423.79a7d027.5fce695c.1c6f65c7.fefb4fc8"
+      "1": "6103dbdb.40d22f60.6de7783c.42c5710a.79a7d027.2e50f823.1c6f65c7.ee5977c3.6103dbdb.40d22f60.673eb66b.59162423.79a7d027.5fce695c.1c6f65c7.fefb4fc8",
+      "0": "a697cc615aed9e4506b056fe40ed295be51a4cfc46109f0d12bacaba28af2a54"
      },
      "codeFlows": [
       {
@@ -1887,7 +1887,7 @@
     ]
    },
    "automationDetails": {
-    "id": "Snyk/Code/2026-11-22T15:39:38Z"
+    "id": "Snyk/Code/2026-11-22T19:20:53Z"
    }
   }
  ]

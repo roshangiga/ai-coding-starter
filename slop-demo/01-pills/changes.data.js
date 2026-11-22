@@ -481,19 +481,19 @@ window.RBX = {
      "rule": "low-contrast",
      "advisory": false,
      "where": "div.hero-eyebrow",
-     "message": "pixel contrast 2.5:1 median 2.5:1 (need 4.5:1) on gradient background \"✨ The future of meetings is here ✨\""
+     "message": "pixel contrast 2.6:1 median 2.6:1 (need 4.5:1) on gradient background \"✨ The future of meetings is here ✨\""
     },
     {
      "rule": "low-contrast",
      "advisory": false,
      "where": "p.hero-subtitle",
-     "message": "pixel contrast 3.0:1 median 3.0:1 (need 4.5:1) on gradient background \"Seamlessly book rooms, unlock productivity, and supercharge collaboration — all \""
+     "message": "pixel contrast 3.1:1 median 3.1:1 (need 4.5:1) on gradient background \"Seamlessly book rooms, unlock productivity, and supercharge collaboration — all \""
     },
     {
      "rule": "low-contrast",
      "advisory": false,
      "where": "a.hero-link",
-     "message": "pixel contrast 1.4:1 median 1.4:1 (need 4.5:1) on gradient background, unread layer \"Explore Spaces ✨\""
+     "message": "pixel contrast 1.5:1 median 1.5:1 (need 4.5:1) on gradient background, unread layer \"Explore Spaces ✨\""
     },
     {
      "rule": "nested-cards",

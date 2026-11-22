@@ -453,13 +453,13 @@ window.RBX = {
      "rule": "low-contrast",
      "advisory": false,
      "where": "div.hero-eyebrow",
-     "message": "pixel contrast 2.5:1 median 2.5:1 (need 4.5:1) on gradient background \"✨ The future of meetings is here ✨\""
+     "message": "pixel contrast 2.6:1 median 2.6:1 (need 4.5:1) on gradient background \"✨ The future of meetings is here ✨\""
     },
     {
      "rule": "low-contrast",
      "advisory": false,
      "where": "p.hero-subtitle",
-     "message": "pixel contrast 3.1:1 median 3.1:1 (need 4.5:1) on gradient background \"Seamlessly book rooms, unlock productivity, and supercharge collaboration — all \""
+     "message": "pixel contrast 3.2:1 median 3.2:1 (need 4.5:1) on gradient background \"Seamlessly book rooms, unlock productivity, and supercharge collaboration — all \""
     },
     {
      "rule": "low-contrast",
@@ -477,7 +477,7 @@ window.RBX = {
      "rule": "low-contrast",
      "advisory": false,
      "where": "span.chip.chip-glow:nth-of-type(2)",
-     "message": "pixel contrast 2.2:1 median 2.2:1 (need 4.5:1) on gradient background, unread layer \"🔒 Enterprise Secure\""
+     "message": "pixel contrast 2.3:1 median 2.3:1 (need 4.5:1) on gradient background, unread layer \"🔒 Enterprise Secure\""
     },
     {
      "rule": "nested-cards",

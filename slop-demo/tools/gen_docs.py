@@ -142,9 +142,8 @@ It needs Node, Google Chrome, Pillow, an authenticated Snyk CLI (`SNYK_BIN`) and
 
 ## Notes
 
-- `00-original` is a copy of `../roombook` without `.git`; only the overlay tags were added to its `index.html`.
-- The original's room images never render: the SVG data URI contains unescaped single quotes inside a single-quoted `src`. Steps 01 to 03 keep that as found; step 04 replaces them with the real photos.
-- Steps 04 to 06 show the real room photos: `images/room-<letter>.jpg` (1200px) and `-600.jpg`, made from `../room-photos/*.png` by the build and served with `srcset`, in fixed 16:9 boxes with `object-fit: cover`. Steps 00 to 03 keep the original placeholder art. Alt text (room name and purpose) arrives in step 05, the accessibility step. In step 06 a card whose photo is missing shows a neutral placeholder.
+- `00-original` is a copy of `../roombook` without `.git`, with two additions: the overlay tags in its `index.html`, and the room photos in place of the original's SVG placeholder art.
+- Every version shows the real room photos, made by the build from `../room-photos/*.png`. Steps 00 to 03 use them the vibe-coded way: one full-size 1600px JPG per room (`images/room-<letter>.jpg`, about 300 KB each), no `srcset`, no size hints, no alt text, inside each step's own card styles. Step 04 puts them in fixed 16:9 boxes with `object-fit: cover` and serves resized copies (1200px and 600px) through `srcset`. Alt text (room name and purpose) arrives in step 05, the accessibility step. In step 06 a card whose photo is missing shows a neutral placeholder.
 - Step 06 drops the "Popular" filter, which no data backs; the `isPopular` flag and its render function stay in `app.js` with the rest of the code-level slop.
 - Step 04 uses the system font stack as its one family (an internal tool needs no font download); step 06 switches to Inter because the MT design system uses it.
 """ % table

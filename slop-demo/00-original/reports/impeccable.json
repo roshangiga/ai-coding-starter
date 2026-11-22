@@ -1312,7 +1312,7 @@
   "category": "quality",
   "file": "index.html?overlay=off",
   "line": 0,
-  "snippet": "pixel contrast 2.5:1 median 2.5:1 (need 4.5:1) on gradient background \"\u2728 The future of meetings is here \u2728\"",
+  "snippet": "pixel contrast 2.6:1 median 2.6:1 (need 4.5:1) on gradient background \"\u2728 The future of meetings is here \u2728\"",
   "selector": "div.hero-eyebrow"
  },
  {
@@ -1323,7 +1323,7 @@
   "category": "quality",
   "file": "index.html?overlay=off",
   "line": 0,
-  "snippet": "pixel contrast 3.1:1 median 3.1:1 (need 4.5:1) on gradient background \"Seamlessly book rooms, unlock productivity, and supercharge collaboration \u2014 all \"",
+  "snippet": "pixel contrast 3.2:1 median 3.2:1 (need 4.5:1) on gradient background \"Seamlessly book rooms, unlock productivity, and supercharge collaboration \u2014 all \"",
   "selector": "p.hero-subtitle"
  },
  {
@@ -1356,7 +1356,7 @@
   "category": "quality",
   "file": "index.html?overlay=off",
   "line": 0,
-  "snippet": "pixel contrast 2.2:1 median 2.2:1 (need 4.5:1) on gradient background, unread layer \"\ud83d\udd12 Enterprise Secure\"",
+  "snippet": "pixel contrast 2.3:1 median 2.3:1 (need 4.5:1) on gradient background, unread layer \"\ud83d\udd12 Enterprise Secure\"",
   "selector": "span.chip.chip-glow:nth-of-type(2)"
  }
 ]

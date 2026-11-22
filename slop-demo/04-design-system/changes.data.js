@@ -55,7 +55,7 @@ window.RBX = {
   },
   {
    "n": 6,
-   "text": "Replaced placeholder art with real room photos (16:9, cover, responsive sizes)",
+   "text": "Photos in fixed 16:9 boxes with object-fit: cover; resized copies with srcset",
    "sel": "#rooms-grid .room-card:nth-child(2) .room-image",
    "pos": "tl",
    "before": "changes/6-before.png",
@@ -91,21 +91,21 @@ window.RBX = {
      "severity": "High",
      "rule": "DOM-based Cross-site Scripting (XSS)",
      "file": "app.js",
-     "line": 135,
+     "line": 138,
      "message": "Unsanitized input from the document location flows into innerHTML, where it is used to dynamically construct the HTML page on client side. This may result in a DOM Based Cross-Site Scripting attack (DOMXSS)."
     },
     {
      "severity": "High",
      "rule": "Code Injection",
      "file": "app.js",
-     "line": 371,
+     "line": 374,
      "message": "Unsanitized input from the document location flows into eval, where it is executed as JavaScript code. This may result in a Code Injection vulnerability."
     },
     {
      "severity": "High",
      "rule": "DOM-based Cross-site Scripting (XSS)",
      "file": "app.js",
-     "line": 398,
+     "line": 401,
      "message": "Unsanitized input from the document location flows into innerHTML, where it is used to dynamically construct the HTML page on client side. This may result in a DOM Based Cross-Site Scripting attack (DOMXSS)."
     },
     {
@@ -140,7 +140,7 @@ window.RBX = {
      "severity": "Medium",
      "rule": "DOM-based Cross-site Scripting (XSS)",
      "file": "app.js",
-     "line": 578,
+     "line": 581,
      "message": "Unsanitized input from browser storage flows into innerHTML, where it is used to dynamically construct the HTML page on client side. This may result in a DOM Based Cross-Site Scripting attack (DOMXSS)."
     }
    ],
