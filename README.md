@@ -29,7 +29,11 @@ New to the factory? Read [`AGENTS.md`](AGENTS.md) first: it's the rulebook every
 ## Hands-on
 
 ### 1. Set up the folder
-1. Clone this repository and open the folder in Cursor (File → Open Folder).
+1. Clone this repository and open the folder in Cursor (File → Open Folder):
+   ```bash
+   git clone https://github.com/roshangiga/ai-coding-starter.git
+   ```
+   Short link to this page: [tinyurl.com/mt-ai-starter](https://tinyurl.com/mt-ai-starter)
 2. Check that [`AGENTS.md`](AGENTS.md), [`spec/`](spec/roombook.md), [`mockup/`](mockup/index.html), [`design/`](design/) and [`.cursor/skills/plane-setup/`](.cursor/skills/plane-setup/SKILL.md) are there.
 3. Open an Agent chat and ask: "What does AGENTS.md say my role options are?"
 
