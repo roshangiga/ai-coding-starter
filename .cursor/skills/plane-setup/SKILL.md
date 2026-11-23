@@ -82,6 +82,10 @@ plane: label action=create project_id=<id> name="<label>" color="<hex>"
 
 Write `factory/board.md`: the mode (Plane or local), and either the Plane project id and identifier with every state id and label id, or the local board's folder and ticket prefix. Every other session reads this file instead of looking things up.
 
+Put a clickable link to the board at the top of `factory/board.md`, and give the same link to the user when setup is done:
+- Plane: `<Plane web address>/<workspace slug>/projects/<project_id>/issues/`. Take the web address from the Plane MCP's configuration (`PLANE_BASE_URL`, or the Plane cloud address when it is not set) and the workspace slug from the Plane MCP; ask the user once if either is unknown.
+- Local: a relative link to `board/README.md`.
+
 ## 5. Spec → tickets
 
 Read the spec (`spec/roombook.md`). If it has work packages, make one ticket per package, in their order, with their dependencies; otherwise one ticket per distinct piece of work a worker can finish and QA can check on its own.
