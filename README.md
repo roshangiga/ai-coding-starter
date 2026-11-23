@@ -28,24 +28,35 @@ New to the factory? Read [`AGENTS.md`](AGENTS.md) first: it's the rulebook every
 
 ## Hands-on
 
+Two things to do: clone, then one prompt.
+
 ### 1. Set up the folder
-1. Clone this repository and open the folder in Cursor (File → Open Folder):
-   ```bash
-   git clone https://github.com/roshangiga/ai-coding-starter.git
-   ```
-   Short link to this page: [tinyurl.com/mt-ai-starter](https://tinyurl.com/mt-ai-starter)
-2. Check that [`AGENTS.md`](AGENTS.md), [`spec/`](spec/roombook.md), [`mockup/`](mockup/index.html), [`design/`](design/) and [`.cursor/skills/plane-setup/`](.cursor/skills/plane-setup/SKILL.md) are there.
-3. Open an Agent chat and ask: "What does AGENTS.md say my role options are?"
+Clone this repository and open the folder in Cursor (File → Open Folder):
+```bash
+git clone https://github.com/roshangiga/ai-coding-starter.git
+```
+Short link to this page: [tinyurl.com/mt-ai-starter](https://tinyurl.com/mt-ai-starter)
 
-Done when: the agent answers from `AGENTS.md`.
+Done when: the folder is open and [`AGENTS.md`](AGENTS.md) is there.
 
-### 2. Set up your board
-In the session the presenter does this on Plane. You use the local board: tickets as Markdown files in `board/`, with the same states, labels and flow, and no account or key.
+### 2. Read the spec
+Open [`spec/roombook.md`](spec/roombook.md). Find the work packages and the acceptance criteria. Pick one criterion and say how QA would check it.
 
-1. In an Agent chat, ask: "Use the plane-setup skill in .cursor/skills to set up the board for this folder."
-2. Open `board/README.md` and `factory/board.md`.
+### 3. Look at the mockup
+Open [`mockup/index.html`](mockup/index.html) in a browser. Switch between light and dark, and compare it with the spec's Design section.
 
-Done when: `board/README.md` lists the states in order and the labels, and `factory/board.md` says the board is local.
+### 4. Start the factory
+Open a new Agent chat in this folder and type:
+
+> You are the coordinator. Read AGENTS.md and start.
+
+1. It sets up the board, and the Issue tracker files the tickets from the spec.
+2. Open a new Agent chat for each role it names, and paste the line it gives you.
+3. Watch the first ticket reach "ready for qa". The agents leave each other notes in `factory/inbox/`.
+
+Done when: QA resolves one ticket on your board and it is merged into `develop`.
+
+**The board:** without Plane, it's the `board/` folder in your clone: one Markdown file per ticket, with the same states and flow. No account or key needed.
 
 **Have your own Plane?** Add the Plane MCP to your own Cursor settings, never to this folder: Cursor Settings → MCP → Add new global MCP server, which opens `~/.cursor/mcp.json`. Add:
 ```json
@@ -62,26 +73,7 @@ Done when: `board/README.md` lists the states in order and the labels, and `fact
   }
 }
 ```
-For a self-hosted Plane, add `"PLANE_BASE_URL": "<your Plane address>"` to `env`. The same prompt then sets up a Plane project. Use a project of your own, so you don't clash with anyone else's.
-
-### 3. Read the spec
-Open [`spec/roombook.md`](spec/roombook.md). Find the work packages and the acceptance criteria. Pick one criterion and say how QA would check it.
-
-Done when: you can point to one work package and its "done when" line.
-
-### 4. Look at the mockup
-Open [`mockup/index.html`](mockup/index.html) in a browser. Switch between light and dark, and compare it with the spec's Design section.
-
-Done when: you've seen what the finished app should look like in both themes.
-
-### 5. Let the factory build it
-Open a new Agent chat in this folder and say:
-
-> You are the coordinator. Read AGENTS.md and start.
-
-The coordinator sets up the code repository, then gives you a one-line prompt for each of the other roles: open a new Agent chat for the Issue tracker, one for the QA tester, and one per worker (or let the coordinator start parallel agents if your Cursor offers them). Watch the board fill from the work packages, the workers build on their own branches, and the first ticket reach "ready for qa" (in `board/`, or in Plane if you use it). The agents leave each other notes in `factory/inbox/`.
-
-Done when: QA resolves one ticket and it is merged into `develop`.
+For a self-hosted Plane, add `"PLANE_BASE_URL": "<your Plane address>"` to `env`. The coordinator then uses Plane instead. Use a project of your own, so you don't clash with anyone else's.
 
 ## The slop demo
 
