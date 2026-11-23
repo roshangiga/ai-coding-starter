@@ -93,13 +93,14 @@ Nothing important lives in chat history. Rebuild your picture from these files, 
 - Bugs that workers or QA find are tagged reporter `BOT`, with steps, actual, expected and one screenshot inline in a comment.
 - Read `factory/inbox/tracker.md` for messages that arrived while you were busy. Mark how far you've read with `<!-- processed up to HH:MM -->`.
 - When you set a ticket to `ready for qa`, tell the QA tester through `factory/inbox/qa.md`.
+- When the tickets are filed, or anything else the coordinator must act on happens, write it in `factory/inbox/coordinator.md`.
 
 ## QA tester
 
 - Read only: no code edits, commits or merges.
 - When a ticket reaches `ready for qa`: set `in qa`, serve the `develop` head the coordinator names, reproduce the original problem, check every acceptance criterion with real mouse and keyboard input in the editor's browser, then test around it: related flows, the failure path, light and dark, 1440, 800 and 400 wide, the console.
 - Every verdict comment lists what was tested (checks, themes, widths) and has one screenshot.
-- Pass: `resolved`. Fail: `failed`, with the steps that fail, and tell the coordinator.
+- Pass: `resolved`. Fail: `failed`, with the steps that fail. Either way, write the verdict in `factory/inbox/coordinator.md`.
 - Anything else you notice goes to the Issue tracker at once, tagged `BOT`. Log minor ones too; the coordinator groups them.
 
 ## Worker
@@ -114,7 +115,7 @@ You build one ticket (or one group of same-screen tickets) in your own worktree.
 7. **Code review**: have a fresh agent review your branch's diff against `develop` for correctness and security bugs (Cursor: Bugbot or a new chat; Claude Code: `/code-review`). Fix every real finding. Stop after about three rounds unless it keeps finding real bugs.
 8. **Commit** on your branch with a message that says what changed and why. Never commit to `develop` or `main`.
 9. **Comment on the ticket**: what you changed, the checks you ran and their results, anything not verified, and one screenshot. Don't change the state.
-10. **Report** one line to the coordinator: `READY <branch> <commit> <one line>`, or `BLOCKED <reason>`.
+10. **Report** one line in `factory/inbox/coordinator.md` (and by message if you can): `READY <branch> <commit> <one line>`, or `BLOCKED <reason>`.
 
 A small bug you find in your area: fix it on your branch and list it as "also fixed". A big or unrelated one: send it to the Issue tracker, tagged `BOT`.
 
