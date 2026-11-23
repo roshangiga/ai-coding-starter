@@ -73,11 +73,12 @@ Nothing important lives in chat history. Rebuild your picture from these files, 
 6. Ask the Issue tracker to turn `spec/roombook.md` into tickets.
 
 **Every run:**
+- **Never end your turn to wait.** Other chats' messages can't let you open new chats, so stay in the turn the owner started: after you hand work out, keep waiting inside this turn by checking `factory/inbox/coordinator.md` and the board every minute or so, and act on each report (merge, start the next workers) in the same turn. End your turn only when the owner asks, when everything is done, or when you are blocked on the owner.
 - Pick tickets in this order: anything blocking others first (project skeleton, shared modules, design tokens), then critical and major, then the rest. Group tickets that touch the same screen into one worker.
 - Before starting a worker, list the files each running worker touches. One owner per file area; set the merge order.
 - Start one worker per ticket, or per group of same-screen tickets, as its own agent chat: a separate thread the owner can open and watch, on the strongest model. Never run a worker as a hidden background subagent. If you can't open a chat yourself, give the owner the one line to paste into a new chat: "You are the worker for <ticket key>. Read AGENTS.md, your role section and factory/board.md, then start." Each worker gets its own branch `<ticket-key>-<short-slug>` and worktree `app/.worktrees/<ticket-key>`, cut from `develop`. Set the ticket to `in development`.
 - Give each worker its brief: this file's Worker section, the ticket key, its branch, worktree and port, and the files it owns. Steer with rules, never with example values.
-- Workers report to you by message or through `factory/inbox/coordinator.md`. Check each worker's result before merging: read the diff, run the tests, open the page. A worker that goes quiet without a final report line stopped early: message it to continue.
+- Workers, the Issue tracker and QA always write their reports to `factory/inbox/coordinator.md` (and may message you as well). Check each worker's result before merging: read the diff, run the tests, open the page. A worker that goes quiet without a final report line stopped early: message it to continue.
 - Merge into `develop` with `--no-ff`, then delete the worktree and the branch. Report the outcome to the Issue tracker, which sets the state.
 - Fix small things yourself. Never leave an agent stuck: when one reports a blocker, fix the cause or take it to the owner.
 - `main` moves only when the owner says so. Push to a remote only if the owner has given one and asked for it.
